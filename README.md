@@ -1,107 +1,67 @@
+# Reducto Financial Extraction
 
-# Reducto Financial Document Extraction
+Turns a quarterly earnings release into the standardized Excel workbook an LP uses for portfolio monitoring and benchmarking, using Reducto's Extract API with citations.
 
-## Project Overview
+Built for the Reducto Senior Solutions Engineer panel exercise.
 
-This project demonstrates how Reducto's document extraction API can support financial analysts by converting financial disclosures into structured data, validating key financial figures, and exporting results for further analysis.
+## The problem
 
-Built as a technical demonstration for a Senior Solutions Engineer interview at Reducto.
+An LP tracks dozens of portfolio companies and public comparables. Each quarter, analysts copy figures from earnings releases into spreadsheets by hand. It's slow, error-prone, and inconsistent across companies and periods.
 
-## Business Use Case
+## The solution
 
-A financial institution needs to reduce the manual effort involved in reviewing earnings releases and regulatory filings.
+```
+Earnings PDF ──► Reducto upload ──► Reducto Extract ──► Validation ──► LP workbook (.xlsx)
+                                    (JSON schema,       (11 reconciliation
+                                     citations on)       checks)
+```
 
-The solution demonstrates a workflow to:
+1. **Extract:** one JSON schema defines every figure the LP asked for, where it appears in the document, its unit and its sign convention.
+2. **Trace:** citations return the page, bounding box and confidence score for every value.
+3. **Validate:** extracted numbers are reconciled against each other (segments sum to totals, FCF = operating cash flow − net capex, supplemental tables agree with the financial statements).
+4. **Deliver:** an Excel workbook in the LP's requested format, with formulas, charts and a full audit trail.
 
-1. Upload financial documents.
-2. Extract structured financial information using Reducto.
-3. Retrieve extracted values and supporting source citations.
-4. Validate financial figures through reconciliation checks.
-5. Export results into Excel for analyst review.
+## Output workbook
 
-## Documents
+| Tab | Contents |
+|---|---|
+| Financials | Net sales, operating income and margin, net income, EPS, operating cash flow, capex, FCF: Q4 and full year, with YoY |
+| Segments | North America, International, AWS: net sales, operating income, margin, revenue mix; two charts |
+| Cash Flow | Cash flow highlights, debt and lease repayments, cash and marketable securities, TTM trend chart |
+| Guidance | Q1 2025 guidance ranges, FX impact, comparison bases, assumptions |
+| Notes | Source, method, units, calculated fields, omitted items, growth-only disclosures |
+| KPIs | Release highlights plus every supplemental metric by quarter; stock-based compensation chart |
+| Disclosures | Partnerships, contract wins and business developments |
+| Validation | 11 reconciliation checks with PASS/FAIL |
+| Extraction Audit | Every field with readable name, value, page, confidence and cited source text |
 
-- Amazon Q4 and FY2024 Earnings Release — implemented.
-- Apple Q3 2024 Form 10-Q — planned.
+## Repository
 
-## Technology
+```
+reducto_financial_extraction.ipynb    Walkthrough notebook (run in Google Colab)
+src/build_workbook.py                 Payload loading, validation and workbook builder
+schema/amazon_q4_2024_schema.json     Reducto extraction schema (92 fields)
+dev/development_notebook.ipynb        Development log: schema iterations and experiments
+```
 
-- Python
-- Google Colab
-- Reducto API and Studio
-- Requests
-- OpenPyXL
-- GitHub
-
-## Repository Contents
-
-**reducto_financial_extraction.ipynb**
-
-The development notebook includes extraction iterations, financial validation, workbook generation, and a dedicated technical walkthrough.
-
-## Technical Workflow
-
-### 1. Authentication
-
-The notebook initializes the Reducto Python client using an API key stored securely in Google Colab Secrets.
-
-### 2. Document Upload
-
-The Amazon earnings release PDF is uploaded to Reducto using the API.
-
-### 3. Structured Extraction
-
-The walkthrough retrieves a previously completed Reducto extraction job containing 90 structured fields.
-
-The original extraction response is preserved to retain supporting citations.
-
-### 4. Financial Validation
-
-Three reconciliation checks verify internal consistency:
-
-| Validation | Calculated ($M) | Reported ($M) | Result |
-|---|---:|---:|---|
-| FY2024 segment revenue | 637,959 | 637,959 | PASS |
-| FY2024 segment operating income | 68,593 | 68,593 | PASS |
-| FY2024 free cash flow | 38,219 | 38,219 | PASS |
-
-These checks confirm that selected extracted figures reconcile mathematically. They do not independently verify every extracted value against the source document.
-
-### 5. Excel Export
-
-The walkthrough generates `Amazon_Financial_Validation_Demo.xlsx`, containing the three financial checks.
-
-A separate six-sheet Amazon analysis workbook was also developed for the LP-facing financial analysis.
-
-## How to Run
+## Run it
 
 1. Open `reducto_financial_extraction.ipynb` in Google Colab.
-2. Install the Reducto Python SDK and other required packages if they are not already installed.
-3. Add a Colab Secret named `REDUCTO_API_KEY` containing your own Reducto API key.
-4. Enable notebook access to that secret.
-5. Run the technical walkthrough section, uploading the Amazon earnings release when prompted.
-6. Retrieve the completed extraction, execute the validation checks, and generate the Excel output.
+2. Add your Reducto API key to Colab Secrets as `REDUCTO_API_KEY`.
+3. Run all cells and upload `AMZN-Q4-2024-Earnings-Release.pdf` when prompted.
+4. The workbook downloads at the end. To reuse a completed extraction and save credits, set `REUSE_JOB_ID`.
 
-**Important:** The demonstration retrieves an existing extraction using a hardcoded job ID. Access to that job may depend on the Reducto account and permissions. A new user would need to run an extraction in their own account and update the job ID.
+## Design decisions
 
-## Design Decisions
+- **Schema descriptions name the exact table and line item.** Early runs mixed up three-month and twelve-month columns; naming the period and table resolved it.
+- **Sign conventions are explicit.** Cash outflows return positive and operating losses return negative, so formulas work without cleanup.
+- **Citations stay with the data.** `amazon_raw` keeps the full response; `amazon` holds plain values for math.
+- **Formulas over hardcoded results.** Growth, margins and mix are live Excel formulas an analyst can audit.
+- **Missing data is omitted and logged.** Fields the release leaves out appear in Notes, per the LP brief.
+- **Extraction, validation and layout are separate,** so a new company needs a new schema and the rest carries over.
 
-- **Credential security:** API credentials are retrieved from Colab Secrets rather than hardcoded.
-- **Traceability:** Original extraction responses retain citation metadata.
-- **Validation:** Financial reconciliation checks provide a basic quality-control layer.
-- **Cost efficiency:** The walkthrough reuses a completed extraction instead of repeatedly submitting extraction jobs.
-- **Analyst usability:** Structured financial data is exported into Excel.
+## Roadmap
 
-## Current Limitations
-
-- The technical walkthrough demonstrates the Amazon workflow only.
-- The notebook retains exploratory development cells and is not a fully automated production pipeline.
-- Extraction accuracy requires further source-level verification.
-- Apple 10-Q processing and the broader multi-document solution remain to be completed.
-
-## Next Steps
-
-- Implement Apple 10-Q extraction and validation.
-- Extend the workflow to support multiple documents.
-- Develop a consolidated analyst dashboard.
-- Improve automated testing and error handling.
+- Apple Q3 FY2024 Form 10-Q through the same pipeline (SEC filing format, different segment structure)
+- Batch processing with async jobs and webhooks for a full portfolio each quarter
+- Review queue that routes low-confidence fields to an analyst

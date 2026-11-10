@@ -1,0 +1,504 @@
+{
+  "schema": {
+    "type": "object",
+    "properties": {
+      "q4_2024_total_net_sales": {
+        "type": "number",
+        "description": "Extract Amazon's total net sales for the three months ended December 31, 2024 from the Consolidated Statements of Operations. Return the reported amount in USD millions as a plain number without currency symbols or commas. Return cash outflows shown in parentheses as positive numbers."
+      },
+      "q4_2024_operating_income": {
+        "type": "number",
+        "description": "Extract Amazon's consolidated operating income for the three months ended December 31, 2024 from the Consolidated Statements of Operations. Return the reported amount in USD millions as a plain number without currency symbols or commas. Return cash outflows shown in parentheses as positive numbers."
+      },
+      "q4_2024_net_income": {
+        "type": "number",
+        "description": "Extract Amazon's consolidated net income for the three months ended December 31, 2024 from the Consolidated Statements of Operations. Return the reported amount in USD millions as a plain number without currency symbols or commas. Return cash outflows shown in parentheses as positive numbers."
+      },
+      "q4_2024_basic_eps": {
+        "type": "number",
+        "description": "Extract Amazon's basic earnings per share for the three months ended December 31, 2024 from the Consolidated Statements of Operations. Return the reported USD per-share amount as a plain number without currency symbols."
+      },
+      "q4_2024_diluted_eps": {
+        "type": "number",
+        "description": "Extract Amazon's diluted earnings per share for the three months ended December 31, 2024 from the Consolidated Statements of Operations. Return the reported USD per-share amount as a plain number without currency symbols."
+      },
+      "q4_2023_total_net_sales": {
+        "type": "number",
+        "description": "Extract Amazon's total net sales for the three months ended December 31, 2023 from the Consolidated Statements of Operations. Return the reported amount in USD millions as a plain number without currency symbols or commas. Return cash outflows shown in parentheses as positive numbers."
+      },
+      "q4_2023_operating_income": {
+        "type": "number",
+        "description": "Extract Amazon's consolidated operating income for the three months ended December 31, 2023 from the Consolidated Statements of Operations. Return the reported amount in USD millions as a plain number without currency symbols or commas. Return cash outflows shown in parentheses as positive numbers."
+      },
+      "q4_2023_net_income": {
+        "type": "number",
+        "description": "Extract Amazon's consolidated net income for the three months ended December 31, 2023 from the Consolidated Statements of Operations. Return the reported amount in USD millions as a plain number without currency symbols or commas. Return cash outflows shown in parentheses as positive numbers."
+      },
+      "q4_2023_basic_eps": {
+        "type": "number",
+        "description": "Extract Amazon's basic earnings per share for the three months ended December 31, 2023 from the Consolidated Statements of Operations. Return the reported USD per-share amount as a plain number without currency symbols."
+      },
+      "q4_2023_diluted_eps": {
+        "type": "number",
+        "description": "Extract Amazon's diluted earnings per share for the three months ended December 31, 2023 from the Consolidated Statements of Operations. Return the reported USD per-share amount as a plain number without currency symbols."
+      },
+      "fy2024_total_net_sales": {
+        "type": "number",
+        "description": "Extract Amazon's total net sales for the twelve months ended December 31, 2024 from the Consolidated Statements of Operations. Return the reported amount in USD millions as a plain number without currency symbols or commas. Return cash outflows shown in parentheses as positive numbers."
+      },
+      "fy2024_operating_income": {
+        "type": "number",
+        "description": "Extract Amazon's consolidated operating income for the twelve months ended December 31, 2024 from the Consolidated Statements of Operations. Return the reported amount in USD millions as a plain number without currency symbols or commas. Return cash outflows shown in parentheses as positive numbers."
+      },
+      "fy2024_net_income": {
+        "type": "number",
+        "description": "Extract Amazon's consolidated net income for the twelve months ended December 31, 2024 from the Consolidated Statements of Operations. Return the reported amount in USD millions as a plain number without currency symbols or commas. Return cash outflows shown in parentheses as positive numbers."
+      },
+      "fy2024_basic_eps": {
+        "type": "number",
+        "description": "Extract Amazon's basic earnings per share for the twelve months ended December 31, 2024 from the Consolidated Statements of Operations. Return the reported USD per-share amount as a plain number without currency symbols."
+      },
+      "fy2024_diluted_eps": {
+        "type": "number",
+        "description": "Extract Amazon's diluted earnings per share for the twelve months ended December 31, 2024 from the Consolidated Statements of Operations. Return the reported USD per-share amount as a plain number without currency symbols."
+      },
+      "fy2023_total_net_sales": {
+        "type": "number",
+        "description": "Extract Amazon's total net sales for the twelve months ended December 31, 2023 from the Consolidated Statements of Operations. Return the reported amount in USD millions as a plain number without currency symbols or commas. Return cash outflows shown in parentheses as positive numbers."
+      },
+      "fy2023_operating_income": {
+        "type": "number",
+        "description": "Extract Amazon's consolidated operating income for the twelve months ended December 31, 2023 from the Consolidated Statements of Operations. Return the reported amount in USD millions as a plain number without currency symbols or commas. Return cash outflows shown in parentheses as positive numbers."
+      },
+      "fy2023_net_income": {
+        "type": "number",
+        "description": "Extract Amazon's consolidated net income for the twelve months ended December 31, 2023 from the Consolidated Statements of Operations. Return the reported amount in USD millions as a plain number without currency symbols or commas. Return cash outflows shown in parentheses as positive numbers."
+      },
+      "fy2023_basic_eps": {
+        "type": "number",
+        "description": "Extract Amazon's basic earnings per share for the twelve months ended December 31, 2023 from the Consolidated Statements of Operations. Return the reported USD per-share amount as a plain number without currency symbols."
+      },
+      "fy2023_diluted_eps": {
+        "type": "number",
+        "description": "Extract Amazon's diluted earnings per share for the twelve months ended December 31, 2023 from the Consolidated Statements of Operations. Return the reported USD per-share amount as a plain number without currency symbols."
+      },
+      "q4_2024_operating_cash_flow": {
+        "type": "number",
+        "description": "Extract 'Net cash provided by (used in) operating activities' for the three months ended December 31, 2024 from the Consolidated Statements of Cash Flows. Return the reported amount in USD millions as a plain number without currency symbols or commas. Return cash outflows shown in parentheses as positive numbers."
+      },
+      "q4_2024_stock_based_compensation": {
+        "type": "number",
+        "description": "Extract 'Stock-based compensation' for the three months ended December 31, 2024 from the Consolidated Statements of Cash Flows. Return the reported amount in USD millions as a plain number without currency symbols or commas. Return cash outflows shown in parentheses as positive numbers."
+      },
+      "q4_2023_operating_cash_flow": {
+        "type": "number",
+        "description": "Extract 'Net cash provided by (used in) operating activities' for the three months ended December 31, 2023 from the Consolidated Statements of Cash Flows. Return the reported amount in USD millions as a plain number without currency symbols or commas. Return cash outflows shown in parentheses as positive numbers."
+      },
+      "q4_2023_stock_based_compensation": {
+        "type": "number",
+        "description": "Extract 'Stock-based compensation' for the three months ended December 31, 2023 from the Consolidated Statements of Cash Flows. Return the reported amount in USD millions as a plain number without currency symbols or commas. Return cash outflows shown in parentheses as positive numbers."
+      },
+      "fy2024_operating_cash_flow": {
+        "type": "number",
+        "description": "Extract 'Net cash provided by (used in) operating activities' for the twelve months ended December 31, 2024 from the Consolidated Statements of Cash Flows. Return the reported amount in USD millions as a plain number without currency symbols or commas. Return cash outflows shown in parentheses as positive numbers."
+      },
+      "fy2024_stock_based_compensation": {
+        "type": "number",
+        "description": "Extract 'Stock-based compensation' for the twelve months ended December 31, 2024 from the Consolidated Statements of Cash Flows. Return the reported amount in USD millions as a plain number without currency symbols or commas. Return cash outflows shown in parentheses as positive numbers."
+      },
+      "fy2023_operating_cash_flow": {
+        "type": "number",
+        "description": "Extract 'Net cash provided by (used in) operating activities' for the twelve months ended December 31, 2023 from the Consolidated Statements of Cash Flows. Return the reported amount in USD millions as a plain number without currency symbols or commas. Return cash outflows shown in parentheses as positive numbers."
+      },
+      "fy2023_stock_based_compensation": {
+        "type": "number",
+        "description": "Extract 'Stock-based compensation' for the twelve months ended December 31, 2023 from the Consolidated Statements of Cash Flows. Return the reported amount in USD millions as a plain number without currency symbols or commas. Return cash outflows shown in parentheses as positive numbers."
+      },
+      "q4_2023_north_america_net_sales": {
+        "type": "number",
+        "description": "Extract North America segment net sales for the three months ended December 31, 2023 from the Segment Information table. Return the reported amount in USD millions as a plain number without currency symbols or commas. Return cash outflows shown in parentheses as positive numbers."
+      },
+      "q4_2023_north_america_operating_income": {
+        "type": "number",
+        "description": "Extract North America segment operating income for the three months ended December 31, 2023 from the Segment Information table. Return an operating loss shown in parentheses as a negative number. Return USD millions as a plain number."
+      },
+      "q4_2023_international_net_sales": {
+        "type": "number",
+        "description": "Extract International segment net sales for the three months ended December 31, 2023 from the Segment Information table. Return the reported amount in USD millions as a plain number without currency symbols or commas. Return cash outflows shown in parentheses as positive numbers."
+      },
+      "q4_2023_international_operating_income": {
+        "type": "number",
+        "description": "Extract International segment operating income for the three months ended December 31, 2023 from the Segment Information table. Return an operating loss shown in parentheses as a negative number. Return USD millions as a plain number."
+      },
+      "q4_2023_aws_net_sales": {
+        "type": "number",
+        "description": "Extract AWS segment net sales for the three months ended December 31, 2023 from the Segment Information table. Return the reported amount in USD millions as a plain number without currency symbols or commas. Return cash outflows shown in parentheses as positive numbers."
+      },
+      "q4_2023_aws_operating_income": {
+        "type": "number",
+        "description": "Extract AWS segment operating income for the three months ended December 31, 2023 from the Segment Information table. Return an operating loss shown in parentheses as a negative number. Return USD millions as a plain number."
+      },
+      "q4_2024_north_america_net_sales": {
+        "type": "number",
+        "description": "Extract North America segment net sales for the three months ended December 31, 2024 from the Segment Information table. Return the reported amount in USD millions as a plain number without currency symbols or commas. Return cash outflows shown in parentheses as positive numbers."
+      },
+      "q4_2024_north_america_operating_income": {
+        "type": "number",
+        "description": "Extract North America segment operating income for the three months ended December 31, 2024 from the Segment Information table. Return an operating loss shown in parentheses as a negative number. Return USD millions as a plain number."
+      },
+      "q4_2024_international_net_sales": {
+        "type": "number",
+        "description": "Extract International segment net sales for the three months ended December 31, 2024 from the Segment Information table. Return the reported amount in USD millions as a plain number without currency symbols or commas. Return cash outflows shown in parentheses as positive numbers."
+      },
+      "q4_2024_international_operating_income": {
+        "type": "number",
+        "description": "Extract International segment operating income for the three months ended December 31, 2024 from the Segment Information table. Return an operating loss shown in parentheses as a negative number. Return USD millions as a plain number."
+      },
+      "q4_2024_aws_net_sales": {
+        "type": "number",
+        "description": "Extract AWS segment net sales for the three months ended December 31, 2024 from the Segment Information table. Return the reported amount in USD millions as a plain number without currency symbols or commas. Return cash outflows shown in parentheses as positive numbers."
+      },
+      "q4_2024_aws_operating_income": {
+        "type": "number",
+        "description": "Extract AWS segment operating income for the three months ended December 31, 2024 from the Segment Information table. Return an operating loss shown in parentheses as a negative number. Return USD millions as a plain number."
+      },
+      "fy2023_north_america_net_sales": {
+        "type": "number",
+        "description": "Extract North America segment net sales for the twelve months ended December 31, 2023 from the Segment Information table. Return the reported amount in USD millions as a plain number without currency symbols or commas. Return cash outflows shown in parentheses as positive numbers."
+      },
+      "fy2023_north_america_operating_income": {
+        "type": "number",
+        "description": "Extract North America segment operating income for the twelve months ended December 31, 2023 from the Segment Information table. Return an operating loss shown in parentheses as a negative number. Return USD millions as a plain number."
+      },
+      "fy2023_international_net_sales": {
+        "type": "number",
+        "description": "Extract International segment net sales for the twelve months ended December 31, 2023 from the Segment Information table. Return the reported amount in USD millions as a plain number without currency symbols or commas. Return cash outflows shown in parentheses as positive numbers."
+      },
+      "fy2023_international_operating_income": {
+        "type": "number",
+        "description": "Extract International segment operating income for the twelve months ended December 31, 2023 from the Segment Information table. Return an operating loss shown in parentheses as a negative number. Return USD millions as a plain number."
+      },
+      "fy2023_aws_net_sales": {
+        "type": "number",
+        "description": "Extract AWS segment net sales for the twelve months ended December 31, 2023 from the Segment Information table. Return the reported amount in USD millions as a plain number without currency symbols or commas. Return cash outflows shown in parentheses as positive numbers."
+      },
+      "fy2023_aws_operating_income": {
+        "type": "number",
+        "description": "Extract AWS segment operating income for the twelve months ended December 31, 2023 from the Segment Information table. Return an operating loss shown in parentheses as a negative number. Return USD millions as a plain number."
+      },
+      "fy2024_north_america_net_sales": {
+        "type": "number",
+        "description": "Extract North America segment net sales for the twelve months ended December 31, 2024 from the Segment Information table. Return the reported amount in USD millions as a plain number without currency symbols or commas. Return cash outflows shown in parentheses as positive numbers."
+      },
+      "fy2024_north_america_operating_income": {
+        "type": "number",
+        "description": "Extract North America segment operating income for the twelve months ended December 31, 2024 from the Segment Information table. Return an operating loss shown in parentheses as a negative number. Return USD millions as a plain number."
+      },
+      "fy2024_international_net_sales": {
+        "type": "number",
+        "description": "Extract International segment net sales for the twelve months ended December 31, 2024 from the Segment Information table. Return the reported amount in USD millions as a plain number without currency symbols or commas. Return cash outflows shown in parentheses as positive numbers."
+      },
+      "fy2024_international_operating_income": {
+        "type": "number",
+        "description": "Extract International segment operating income for the twelve months ended December 31, 2024 from the Segment Information table. Return an operating loss shown in parentheses as a negative number. Return USD millions as a plain number."
+      },
+      "fy2024_aws_net_sales": {
+        "type": "number",
+        "description": "Extract AWS segment net sales for the twelve months ended December 31, 2024 from the Segment Information table. Return the reported amount in USD millions as a plain number without currency symbols or commas. Return cash outflows shown in parentheses as positive numbers."
+      },
+      "fy2024_aws_operating_income": {
+        "type": "number",
+        "description": "Extract AWS segment operating income for the twelve months ended December 31, 2024 from the Segment Information table. Return an operating loss shown in parentheses as a negative number. Return USD millions as a plain number."
+      },
+      "fy2024_free_cash_flow_ttm": {
+        "type": "number",
+        "description": "Extract 'Free cash flow -- TTM' for the quarter ending December 31, 2024 from the Supplemental Financial Information and Business Metrics table. Return the reported amount in USD millions as a plain number without currency symbols or commas. Return cash outflows shown in parentheses as positive numbers."
+      },
+      "fy2024_purchases_property_equipment": {
+        "type": "number",
+        "description": "Extract 'Purchases of property and equipment' for the twelve months ended December 31, 2024 from the Consolidated Statements of Cash Flows. Return the reported amount in USD millions as a plain number without currency symbols or commas. Return cash outflows shown in parentheses as positive numbers."
+      },
+      "fy2024_net_purchases_property_equipment": {
+        "type": "number",
+        "description": "Extract 'Purchases of property and equipment, net of proceeds from sales and incentives -- TTM' for the quarter ending December 31, 2024 from the Supplemental Financial Information and Business Metrics table. Return the reported amount in USD millions as a plain number without currency symbols or commas. Return cash outflows shown in parentheses as positive numbers."
+      },
+      "fy2024_finance_lease_equipment_acquired": {
+        "type": "number",
+        "description": "Extract 'Equipment acquired under finance leases -- TTM' for the quarter ending December 31, 2024 from the Supplemental Financial Information and Business Metrics table. Return the reported amount in USD millions as a plain number without currency symbols or commas. Return cash outflows shown in parentheses as positive numbers."
+      },
+      "fy2024_finance_lease_principal_repayments": {
+        "type": "number",
+        "description": "Extract 'Principal repayments of finance leases' for the twelve months ended December 31, 2024 from the Consolidated Statements of Cash Flows. Return the reported amount in USD millions as a plain number without currency symbols or commas. Return cash outflows shown in parentheses as positive numbers."
+      },
+      "fy2024_long_term_debt_repayments": {
+        "type": "number",
+        "description": "Extract 'Repayments of long-term debt' for the twelve months ended December 31, 2024 from the Consolidated Statements of Cash Flows. Return the reported amount in USD millions as a plain number without currency symbols or commas. Return cash outflows shown in parentheses as positive numbers."
+      },
+      "fy2024_financing_obligations_principal_repayments": {
+        "type": "number",
+        "description": "Extract 'Principal repayments of financing obligations' for the twelve months ended December 31, 2024 from the Consolidated Statements of Cash Flows. Return the reported amount in USD millions as a plain number without currency symbols or commas. Return cash outflows shown in parentheses as positive numbers."
+      },
+      "fy2023_free_cash_flow_ttm": {
+        "type": "number",
+        "description": "Extract 'Free cash flow -- TTM' for the quarter ending December 31, 2023 from the Supplemental Financial Information and Business Metrics table. Return the reported amount in USD millions as a plain number without currency symbols or commas. Return cash outflows shown in parentheses as positive numbers."
+      },
+      "fy2023_purchases_property_equipment": {
+        "type": "number",
+        "description": "Extract 'Purchases of property and equipment' for the twelve months ended December 31, 2023 from the Consolidated Statements of Cash Flows. Return the reported amount in USD millions as a plain number without currency symbols or commas. Return cash outflows shown in parentheses as positive numbers."
+      },
+      "fy2023_net_purchases_property_equipment": {
+        "type": "number",
+        "description": "Extract 'Purchases of property and equipment, net of proceeds from sales and incentives -- TTM' for the quarter ending December 31, 2023 from the Supplemental Financial Information and Business Metrics table. Return the reported amount in USD millions as a plain number without currency symbols or commas. Return cash outflows shown in parentheses as positive numbers."
+      },
+      "fy2023_finance_lease_equipment_acquired": {
+        "type": "number",
+        "description": "Extract 'Equipment acquired under finance leases -- TTM' for the quarter ending December 31, 2023 from the Supplemental Financial Information and Business Metrics table. Return the reported amount in USD millions as a plain number without currency symbols or commas. Return cash outflows shown in parentheses as positive numbers."
+      },
+      "fy2023_finance_lease_principal_repayments": {
+        "type": "number",
+        "description": "Extract 'Principal repayments of finance leases' for the twelve months ended December 31, 2023 from the Consolidated Statements of Cash Flows. Return the reported amount in USD millions as a plain number without currency symbols or commas. Return cash outflows shown in parentheses as positive numbers."
+      },
+      "fy2023_long_term_debt_repayments": {
+        "type": "number",
+        "description": "Extract 'Repayments of long-term debt' for the twelve months ended December 31, 2023 from the Consolidated Statements of Cash Flows. Return the reported amount in USD millions as a plain number without currency symbols or commas. Return cash outflows shown in parentheses as positive numbers."
+      },
+      "fy2023_financing_obligations_principal_repayments": {
+        "type": "number",
+        "description": "Extract 'Principal repayments of financing obligations' for the twelve months ended December 31, 2023 from the Consolidated Statements of Cash Flows. Return the reported amount in USD millions as a plain number without currency symbols or commas. Return cash outflows shown in parentheses as positive numbers."
+      },
+      "fy2024_long_term_debt_proceeds": {
+        "type": "number",
+        "description": "Extract proceeds from long-term debt for the twelve months ended December 31, 2024 from the Consolidated Statements of Cash Flows, if a line for it is reported. Return null if the statement has no such line. Return the reported amount in USD millions as a plain number without currency symbols or commas. Return cash outflows shown in parentheses as positive numbers."
+      },
+      "fy2024_purchases_marketable_securities": {
+        "type": "number",
+        "description": "Extract 'Purchases of marketable securities' for the twelve months ended December 31, 2024 from the Consolidated Statements of Cash Flows. Return the reported amount in USD millions as a plain number without currency symbols or commas. Return cash outflows shown in parentheses as positive numbers."
+      },
+      "fy2024_sales_maturities_marketable_securities": {
+        "type": "number",
+        "description": "Extract 'Sales and maturities of marketable securities' for the twelve months ended December 31, 2024 from the Consolidated Statements of Cash Flows. Return the reported amount in USD millions as a plain number without currency symbols or commas. Return cash outflows shown in parentheses as positive numbers."
+      },
+      "dec2024_cash_cash_equivalents": {
+        "type": "number",
+        "description": "Extract 'Cash and cash equivalents' as of December 31, 2024 from the Consolidated Balance Sheets. Return the reported amount in USD millions as a plain number without currency symbols or commas. Return cash outflows shown in parentheses as positive numbers."
+      },
+      "dec2024_marketable_securities": {
+        "type": "number",
+        "description": "Extract 'Marketable securities' as of December 31, 2024 from the Consolidated Balance Sheets. Return the reported amount in USD millions as a plain number without currency symbols or commas. Return cash outflows shown in parentheses as positive numbers."
+      },
+      "dec2024_long_term_debt": {
+        "type": "number",
+        "description": "Extract 'Long-term debt' as of December 31, 2024 from the Consolidated Balance Sheets. Return the reported amount in USD millions as a plain number without currency symbols or commas. Return cash outflows shown in parentheses as positive numbers."
+      },
+      "dec2023_cash_cash_equivalents": {
+        "type": "number",
+        "description": "Extract 'Cash and cash equivalents' as of December 31, 2023 from the Consolidated Balance Sheets. Return the reported amount in USD millions as a plain number without currency symbols or commas. Return cash outflows shown in parentheses as positive numbers."
+      },
+      "dec2023_marketable_securities": {
+        "type": "number",
+        "description": "Extract 'Marketable securities' as of December 31, 2023 from the Consolidated Balance Sheets. Return the reported amount in USD millions as a plain number without currency symbols or commas. Return cash outflows shown in parentheses as positive numbers."
+      },
+      "dec2023_long_term_debt": {
+        "type": "number",
+        "description": "Extract 'Long-term debt' as of December 31, 2023 from the Consolidated Balance Sheets. Return the reported amount in USD millions as a plain number without currency symbols or commas. Return cash outflows shown in parentheses as positive numbers."
+      },
+      "dec2024_current_portion_long_term_debt": {
+        "type": "number",
+        "description": "Extract the current portion of long-term debt as of December 31, 2024, only if the Consolidated Balance Sheets report it as a separate line. Return null otherwise. Return the reported amount in USD millions as a plain number without currency symbols or commas. Return cash outflows shown in parentheses as positive numbers."
+      },
+      "q1_2025_guidance_net_sales_low": {
+        "type": "number",
+        "description": "Extract the low end of expected Q1 2025 net sales from the 'First Quarter 2025 Guidance' section. Convert billions to USD millions (for example, $151.0 billion becomes 151000)."
+      },
+      "q1_2025_guidance_net_sales_high": {
+        "type": "number",
+        "description": "Extract the high end of expected Q1 2025 net sales from the 'First Quarter 2025 Guidance' section. Convert billions to USD millions (for example, $151.0 billion becomes 151000)."
+      },
+      "q1_2025_guidance_sales_yoy_growth_low_pct": {
+        "type": "number",
+        "description": "Extract the low end of expected Q1 2025 net sales growth versus first quarter 2024, as a percentage number (for example, 5% becomes 5) from the 'First Quarter 2025 Guidance' section."
+      },
+      "q1_2025_guidance_sales_yoy_growth_high_pct": {
+        "type": "number",
+        "description": "Extract the high end of expected Q1 2025 net sales growth versus first quarter 2024, as a percentage number from the 'First Quarter 2025 Guidance' section."
+      },
+      "q1_2025_guidance_operating_income_low": {
+        "type": "number",
+        "description": "Extract the low end of expected Q1 2025 operating income from the 'First Quarter 2025 Guidance' section. Convert billions to USD millions (for example, $151.0 billion becomes 151000)."
+      },
+      "q1_2025_guidance_operating_income_high": {
+        "type": "number",
+        "description": "Extract the high end of expected Q1 2025 operating income from the 'First Quarter 2025 Guidance' section. Convert billions to USD millions (for example, $151.0 billion becomes 151000)."
+      },
+      "q1_2025_guidance_fx_impact_usd": {
+        "type": "number",
+        "description": "Extract the expected foreign exchange impact on Q1 2025 net sales from the 'First Quarter 2025 Guidance' section. Convert billions to USD millions (for example, $151.0 billion becomes 151000). Return an unfavorable impact as a negative number."
+      },
+      "q1_2025_guidance_fx_impact_basis_points": {
+        "type": "number",
+        "description": "Extract the expected foreign exchange impact on Q1 2025 net sales in basis points from the 'First Quarter 2025 Guidance' section. Return an unfavorable impact as a negative number."
+      },
+      "q1_2024_operating_income_guidance_comparison": {
+        "type": "number",
+        "description": "Extract the first quarter 2024 operating income that the Q1 2025 operating income guidance is compared with ('compared with $X billion in first quarter 2024') from the 'First Quarter 2025 Guidance' section. Convert billions to USD millions (for example, $151.0 billion becomes 151000)."
+      },
+      "q1_2024_leap_year_net_sales_impact": {
+        "type": "number",
+        "description": "Extract the approximate net sales that Leap Year added in first quarter 2024 from the 'First Quarter 2025 Guidance' section. Convert billions to USD millions (for example, $151.0 billion becomes 151000)."
+      },
+      "q1_2025_guidance_assumptions": {
+        "type": "string",
+        "description": "Extract the stated assumptions behind the guidance from the 'First Quarter 2025 Guidance' section. Return the wording as written."
+      },
+      "q1_2025_guidance_margin_commentary": {
+        "type": "string",
+        "description": "Extract any explicit management commentary on expected margin changes for future periods. Return null if the document has none."
+      },
+      "fy2025_expected_capital_investment_commentary": {
+        "type": "string",
+        "description": "Extract any explicit commentary on expected 2025 capital expenditures or capital investment levels. Return null if the document has none."
+      },
+      "strategic_partnerships_and_investments": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "topic": {
+              "type": "string",
+              "description": "Short name of the partnership, contract, launch or development."
+            },
+            "details": {
+              "type": "string",
+              "description": "One factual sentence describing it, as stated in the document."
+            },
+            "value": {
+              "type": "number",
+              "description": "Any number stated with it (for example a dollar amount or count). Null if none."
+            },
+            "unit": {
+              "type": "string",
+              "description": "Unit of the value (for example 'USD millions', 'models'). Null if none."
+            },
+            "period": {
+              "type": "string",
+              "description": "Period the item relates to, if stated. Null if none."
+            }
+          }
+        },
+        "description": "List notable strategic partnerships, collaborations, customer agreements and contract wins named in the release's highlights."
+      },
+      "other_material_business_developments": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "topic": {
+              "type": "string",
+              "description": "Short name of the partnership, contract, launch or development."
+            },
+            "details": {
+              "type": "string",
+              "description": "One factual sentence describing it, as stated in the document."
+            },
+            "value": {
+              "type": "number",
+              "description": "Any number stated with it (for example a dollar amount or count). Null if none."
+            },
+            "unit": {
+              "type": "string",
+              "description": "Unit of the value (for example 'USD millions', 'models'). Null if none."
+            },
+            "period": {
+              "type": "string",
+              "description": "Period the item relates to, if stated. Null if none."
+            }
+          }
+        },
+        "description": "List other material business developments named in the release's highlights: product launches, new services, regional expansions and relief efforts."
+      },
+      "operating_metrics_and_kpis": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "metric": {
+              "type": "string",
+              "description": "Metric name exactly as labeled in the document. For rows under a segment heading in the Supplemental tables, prefix the segment, for example 'AWS Segment: — Net sales'."
+            },
+            "details": {
+              "type": "string",
+              "description": "Short description including the table or section the metric comes from."
+            },
+            "value": {
+              "type": "number",
+              "description": "Numeric value. Percentages as numbers (36% becomes 36). Values in parentheses as negative numbers."
+            },
+            "unit": {
+              "type": "string",
+              "description": "Unit, for example 'USD millions', 'percent', 'million viewers', 'employees'."
+            },
+            "period": {
+              "type": "string",
+              "description": "Period, for example 'Q4 2024' for quarterly columns, 'TTM as of Q4 2024' for trailing-twelve-month rows, or the period stated in the text."
+            }
+          }
+        },
+        "description": "Extract every operating metric and KPI: each row and quarter column (Q3 2023 through Q4 2024) of the Supplemental Financial Information and Business Metrics tables as a separate record, plus quantified highlights in the release text (delivery speed, viewers, device sales, event attendance). Skip N/A cells."
+      }
+    },
+    "required": [
+      "q4_2024_total_net_sales",
+      "q4_2024_operating_income",
+      "q4_2024_net_income",
+      "q4_2024_basic_eps",
+      "q4_2024_diluted_eps",
+      "q4_2023_total_net_sales",
+      "q4_2023_operating_income",
+      "q4_2023_net_income",
+      "q4_2023_basic_eps",
+      "q4_2023_diluted_eps",
+      "fy2024_total_net_sales",
+      "fy2024_operating_income",
+      "fy2024_net_income",
+      "fy2024_basic_eps",
+      "fy2024_diluted_eps",
+      "fy2023_total_net_sales",
+      "fy2023_operating_income",
+      "fy2023_net_income",
+      "fy2023_basic_eps",
+      "fy2023_diluted_eps",
+      "q4_2024_operating_cash_flow",
+      "q4_2024_stock_based_compensation",
+      "q4_2023_operating_cash_flow",
+      "q4_2023_stock_based_compensation",
+      "fy2024_operating_cash_flow",
+      "fy2024_stock_based_compensation",
+      "fy2023_operating_cash_flow",
+      "fy2023_stock_based_compensation",
+      "q4_2023_north_america_net_sales",
+      "q4_2023_north_america_operating_income",
+      "q4_2023_international_net_sales",
+      "q4_2023_international_operating_income",
+      "q4_2023_aws_net_sales",
+      "q4_2023_aws_operating_income",
+      "q4_2024_north_america_net_sales",
+      "q4_2024_north_america_operating_income",
+      "q4_2024_international_net_sales",
+      "q4_2024_international_operating_income",
+      "q4_2024_aws_net_sales",
+      "q4_2024_aws_operating_income",
+      "fy2023_north_america_net_sales",
+      "fy2023_north_america_operating_income",
+      "fy2023_international_net_sales",
+      "fy2023_international_operating_income",
+      "fy2023_aws_net_sales",
+      "fy2023_aws_operating_income",
+      "fy2024_north_america_net_sales",
+      "fy2024_north_america_operating_income",
+      "fy2024_international_net_sales",
+      "fy2024_international_operating_income",
+      "fy2024_aws_net_sales",
+      "fy2024_aws_operating_income"
+    ]
+  }
+}
