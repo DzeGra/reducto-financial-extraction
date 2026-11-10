@@ -1,0 +1,1725 @@
+{
+  "schema": {
+    "type": "object",
+    "properties": {
+      "q3_fy2024_total_net_sales": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Apple's Total net sales for the three months ended June 29, 2024 from the Condensed Consolidated Statements of Operations (column 'Three Months Ended June 29, 2024'). Return the reported amount in USD millions, without currency symbols or commas. Do not use Products or Services net sales alone. Do not use the 'Three Months Ended July 1, 2023', 'Nine Months Ended June 29, 2024' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "q3_fy2024_products_net_sales": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Apple's Net sales: Products for the three months ended June 29, 2024 from the Condensed Consolidated Statements of Operations (column 'Three Months Ended June 29, 2024'). Return the reported amount in USD millions, without currency symbols or commas. Do not use total net sales or cost of sales. Do not use the 'Three Months Ended July 1, 2023', 'Nine Months Ended June 29, 2024' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "q3_fy2024_services_net_sales": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Apple's Net sales: Services for the three months ended June 29, 2024 from the Condensed Consolidated Statements of Operations (column 'Three Months Ended June 29, 2024'). Return the reported amount in USD millions, without currency symbols or commas. Do not use total net sales or cost of sales. Do not use the 'Three Months Ended July 1, 2023', 'Nine Months Ended June 29, 2024' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "q3_fy2024_gross_margin": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Apple's total Gross margin (dollar amount) for the three months ended June 29, 2024 from the Condensed Consolidated Statements of Operations (column 'Three Months Ended June 29, 2024'). Return the reported amount in USD millions, without currency symbols or commas. Do not return a percentage. Do not use the 'Three Months Ended July 1, 2023', 'Nine Months Ended June 29, 2024' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "q3_fy2024_research_and_development": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Apple's Research and development operating expense for the three months ended June 29, 2024 from the Condensed Consolidated Statements of Operations (column 'Three Months Ended June 29, 2024'). Return the reported amount in USD millions, without currency symbols or commas. Do not use the 'Three Months Ended July 1, 2023', 'Nine Months Ended June 29, 2024' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "q3_fy2024_selling_general_administrative": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Apple's Selling, general and administrative operating expense for the three months ended June 29, 2024 from the Condensed Consolidated Statements of Operations (column 'Three Months Ended June 29, 2024'). Return the reported amount in USD millions, without currency symbols or commas. Do not use the 'Three Months Ended July 1, 2023', 'Nine Months Ended June 29, 2024' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "q3_fy2024_operating_income": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Apple's Operating income for the three months ended June 29, 2024 from the Condensed Consolidated Statements of Operations (column 'Three Months Ended June 29, 2024'). Return the reported amount in USD millions, without currency symbols or commas. Do not use segment operating income. Do not use the 'Three Months Ended July 1, 2023', 'Nine Months Ended June 29, 2024' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "q3_fy2024_provision_for_income_taxes": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Apple's Provision for income taxes for the three months ended June 29, 2024 from the Condensed Consolidated Statements of Operations (column 'Three Months Ended June 29, 2024'). Return the reported amount in USD millions, without currency symbols or commas. Do not use the 'Three Months Ended July 1, 2023', 'Nine Months Ended June 29, 2024' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "q3_fy2024_net_income": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Apple's Net income for the three months ended June 29, 2024 from the Condensed Consolidated Statements of Operations (column 'Three Months Ended June 29, 2024'). Return the reported amount in USD millions, without currency symbols or commas. Do not use the 'Three Months Ended July 1, 2023', 'Nine Months Ended June 29, 2024' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "q3_fy2024_basic_eps": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Apple's Earnings per share: Basic for the three months ended June 29, 2024 from the Condensed Consolidated Statements of Operations (column 'Three Months Ended June 29, 2024'). Return the reported USD per-share amount without currency symbols. Do not use diluted EPS. Do not use the 'Three Months Ended July 1, 2023', 'Nine Months Ended June 29, 2024' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "q3_fy2024_diluted_eps": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Apple's Earnings per share: Diluted for the three months ended June 29, 2024 from the Condensed Consolidated Statements of Operations (column 'Three Months Ended June 29, 2024'). Return the reported USD per-share amount without currency symbols. Do not use basic EPS. Do not use the 'Three Months Ended July 1, 2023', 'Nine Months Ended June 29, 2024' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "q3_fy2024_diluted_shares": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Apple's Shares used in computing earnings per share: Diluted for the three months ended June 29, 2024 from the Condensed Consolidated Statements of Operations (column 'Three Months Ended June 29, 2024'). Return the reported number in thousands of shares, without commas. Do not use basic shares. Do not use the 'Three Months Ended July 1, 2023', 'Nine Months Ended June 29, 2024' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "q3_fy2023_total_net_sales": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Apple's Total net sales for the three months ended July 1, 2023 from the Condensed Consolidated Statements of Operations (column 'Three Months Ended July 1, 2023'). Return the reported amount in USD millions, without currency symbols or commas. Do not use Products or Services net sales alone. Do not use the 'Three Months Ended June 29, 2024', 'Nine Months Ended June 29, 2024' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "q3_fy2023_products_net_sales": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Apple's Net sales: Products for the three months ended July 1, 2023 from the Condensed Consolidated Statements of Operations (column 'Three Months Ended July 1, 2023'). Return the reported amount in USD millions, without currency symbols or commas. Do not use total net sales or cost of sales. Do not use the 'Three Months Ended June 29, 2024', 'Nine Months Ended June 29, 2024' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "q3_fy2023_services_net_sales": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Apple's Net sales: Services for the three months ended July 1, 2023 from the Condensed Consolidated Statements of Operations (column 'Three Months Ended July 1, 2023'). Return the reported amount in USD millions, without currency symbols or commas. Do not use total net sales or cost of sales. Do not use the 'Three Months Ended June 29, 2024', 'Nine Months Ended June 29, 2024' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "q3_fy2023_gross_margin": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Apple's total Gross margin (dollar amount) for the three months ended July 1, 2023 from the Condensed Consolidated Statements of Operations (column 'Three Months Ended July 1, 2023'). Return the reported amount in USD millions, without currency symbols or commas. Do not return a percentage. Do not use the 'Three Months Ended June 29, 2024', 'Nine Months Ended June 29, 2024' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "q3_fy2023_research_and_development": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Apple's Research and development operating expense for the three months ended July 1, 2023 from the Condensed Consolidated Statements of Operations (column 'Three Months Ended July 1, 2023'). Return the reported amount in USD millions, without currency symbols or commas. Do not use the 'Three Months Ended June 29, 2024', 'Nine Months Ended June 29, 2024' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "q3_fy2023_selling_general_administrative": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Apple's Selling, general and administrative operating expense for the three months ended July 1, 2023 from the Condensed Consolidated Statements of Operations (column 'Three Months Ended July 1, 2023'). Return the reported amount in USD millions, without currency symbols or commas. Do not use the 'Three Months Ended June 29, 2024', 'Nine Months Ended June 29, 2024' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "q3_fy2023_operating_income": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Apple's Operating income for the three months ended July 1, 2023 from the Condensed Consolidated Statements of Operations (column 'Three Months Ended July 1, 2023'). Return the reported amount in USD millions, without currency symbols or commas. Do not use segment operating income. Do not use the 'Three Months Ended June 29, 2024', 'Nine Months Ended June 29, 2024' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "q3_fy2023_provision_for_income_taxes": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Apple's Provision for income taxes for the three months ended July 1, 2023 from the Condensed Consolidated Statements of Operations (column 'Three Months Ended July 1, 2023'). Return the reported amount in USD millions, without currency symbols or commas. Do not use the 'Three Months Ended June 29, 2024', 'Nine Months Ended June 29, 2024' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "q3_fy2023_net_income": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Apple's Net income for the three months ended July 1, 2023 from the Condensed Consolidated Statements of Operations (column 'Three Months Ended July 1, 2023'). Return the reported amount in USD millions, without currency symbols or commas. Do not use the 'Three Months Ended June 29, 2024', 'Nine Months Ended June 29, 2024' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "q3_fy2023_basic_eps": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Apple's Earnings per share: Basic for the three months ended July 1, 2023 from the Condensed Consolidated Statements of Operations (column 'Three Months Ended July 1, 2023'). Return the reported USD per-share amount without currency symbols. Do not use diluted EPS. Do not use the 'Three Months Ended June 29, 2024', 'Nine Months Ended June 29, 2024' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "q3_fy2023_diluted_eps": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Apple's Earnings per share: Diluted for the three months ended July 1, 2023 from the Condensed Consolidated Statements of Operations (column 'Three Months Ended July 1, 2023'). Return the reported USD per-share amount without currency symbols. Do not use basic EPS. Do not use the 'Three Months Ended June 29, 2024', 'Nine Months Ended June 29, 2024' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "q3_fy2023_diluted_shares": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Apple's Shares used in computing earnings per share: Diluted for the three months ended July 1, 2023 from the Condensed Consolidated Statements of Operations (column 'Three Months Ended July 1, 2023'). Return the reported number in thousands of shares, without commas. Do not use basic shares. Do not use the 'Three Months Ended June 29, 2024', 'Nine Months Ended June 29, 2024' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "ytd_fy2024_total_net_sales": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Apple's Total net sales for the nine months ended June 29, 2024 from the Condensed Consolidated Statements of Operations (column 'Nine Months Ended June 29, 2024'). Return the reported amount in USD millions, without currency symbols or commas. Do not use Products or Services net sales alone. Do not use the 'Three Months Ended June 29, 2024', 'Three Months Ended July 1, 2023' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "ytd_fy2024_products_net_sales": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Apple's Net sales: Products for the nine months ended June 29, 2024 from the Condensed Consolidated Statements of Operations (column 'Nine Months Ended June 29, 2024'). Return the reported amount in USD millions, without currency symbols or commas. Do not use total net sales or cost of sales. Do not use the 'Three Months Ended June 29, 2024', 'Three Months Ended July 1, 2023' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "ytd_fy2024_services_net_sales": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Apple's Net sales: Services for the nine months ended June 29, 2024 from the Condensed Consolidated Statements of Operations (column 'Nine Months Ended June 29, 2024'). Return the reported amount in USD millions, without currency symbols or commas. Do not use total net sales or cost of sales. Do not use the 'Three Months Ended June 29, 2024', 'Three Months Ended July 1, 2023' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "ytd_fy2024_gross_margin": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Apple's total Gross margin (dollar amount) for the nine months ended June 29, 2024 from the Condensed Consolidated Statements of Operations (column 'Nine Months Ended June 29, 2024'). Return the reported amount in USD millions, without currency symbols or commas. Do not return a percentage. Do not use the 'Three Months Ended June 29, 2024', 'Three Months Ended July 1, 2023' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "ytd_fy2024_research_and_development": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Apple's Research and development operating expense for the nine months ended June 29, 2024 from the Condensed Consolidated Statements of Operations (column 'Nine Months Ended June 29, 2024'). Return the reported amount in USD millions, without currency symbols or commas. Do not use the 'Three Months Ended June 29, 2024', 'Three Months Ended July 1, 2023' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "ytd_fy2024_selling_general_administrative": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Apple's Selling, general and administrative operating expense for the nine months ended June 29, 2024 from the Condensed Consolidated Statements of Operations (column 'Nine Months Ended June 29, 2024'). Return the reported amount in USD millions, without currency symbols or commas. Do not use the 'Three Months Ended June 29, 2024', 'Three Months Ended July 1, 2023' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "ytd_fy2024_operating_income": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Apple's Operating income for the nine months ended June 29, 2024 from the Condensed Consolidated Statements of Operations (column 'Nine Months Ended June 29, 2024'). Return the reported amount in USD millions, without currency symbols or commas. Do not use segment operating income. Do not use the 'Three Months Ended June 29, 2024', 'Three Months Ended July 1, 2023' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "ytd_fy2024_provision_for_income_taxes": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Apple's Provision for income taxes for the nine months ended June 29, 2024 from the Condensed Consolidated Statements of Operations (column 'Nine Months Ended June 29, 2024'). Return the reported amount in USD millions, without currency symbols or commas. Do not use the 'Three Months Ended June 29, 2024', 'Three Months Ended July 1, 2023' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "ytd_fy2024_net_income": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Apple's Net income for the nine months ended June 29, 2024 from the Condensed Consolidated Statements of Operations (column 'Nine Months Ended June 29, 2024'). Return the reported amount in USD millions, without currency symbols or commas. Do not use the 'Three Months Ended June 29, 2024', 'Three Months Ended July 1, 2023' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "ytd_fy2024_basic_eps": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Apple's Earnings per share: Basic for the nine months ended June 29, 2024 from the Condensed Consolidated Statements of Operations (column 'Nine Months Ended June 29, 2024'). Return the reported USD per-share amount without currency symbols. Do not use diluted EPS. Do not use the 'Three Months Ended June 29, 2024', 'Three Months Ended July 1, 2023' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "ytd_fy2024_diluted_eps": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Apple's Earnings per share: Diluted for the nine months ended June 29, 2024 from the Condensed Consolidated Statements of Operations (column 'Nine Months Ended June 29, 2024'). Return the reported USD per-share amount without currency symbols. Do not use basic EPS. Do not use the 'Three Months Ended June 29, 2024', 'Three Months Ended July 1, 2023' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "ytd_fy2024_diluted_shares": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Apple's Shares used in computing earnings per share: Diluted for the nine months ended June 29, 2024 from the Condensed Consolidated Statements of Operations (column 'Nine Months Ended June 29, 2024'). Return the reported number in thousands of shares, without commas. Do not use basic shares. Do not use the 'Three Months Ended June 29, 2024', 'Three Months Ended July 1, 2023' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "ytd_fy2023_total_net_sales": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Apple's Total net sales for the nine months ended July 1, 2023 from the Condensed Consolidated Statements of Operations (column 'Nine Months Ended July 1, 2023'). Return the reported amount in USD millions, without currency symbols or commas. Do not use Products or Services net sales alone. Do not use the 'Three Months Ended June 29, 2024', 'Three Months Ended July 1, 2023' or 'Nine Months Ended June 29, 2024' columns. If unavailable, return null."
+      },
+      "ytd_fy2023_products_net_sales": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Apple's Net sales: Products for the nine months ended July 1, 2023 from the Condensed Consolidated Statements of Operations (column 'Nine Months Ended July 1, 2023'). Return the reported amount in USD millions, without currency symbols or commas. Do not use total net sales or cost of sales. Do not use the 'Three Months Ended June 29, 2024', 'Three Months Ended July 1, 2023' or 'Nine Months Ended June 29, 2024' columns. If unavailable, return null."
+      },
+      "ytd_fy2023_services_net_sales": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Apple's Net sales: Services for the nine months ended July 1, 2023 from the Condensed Consolidated Statements of Operations (column 'Nine Months Ended July 1, 2023'). Return the reported amount in USD millions, without currency symbols or commas. Do not use total net sales or cost of sales. Do not use the 'Three Months Ended June 29, 2024', 'Three Months Ended July 1, 2023' or 'Nine Months Ended June 29, 2024' columns. If unavailable, return null."
+      },
+      "ytd_fy2023_gross_margin": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Apple's total Gross margin (dollar amount) for the nine months ended July 1, 2023 from the Condensed Consolidated Statements of Operations (column 'Nine Months Ended July 1, 2023'). Return the reported amount in USD millions, without currency symbols or commas. Do not return a percentage. Do not use the 'Three Months Ended June 29, 2024', 'Three Months Ended July 1, 2023' or 'Nine Months Ended June 29, 2024' columns. If unavailable, return null."
+      },
+      "ytd_fy2023_research_and_development": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Apple's Research and development operating expense for the nine months ended July 1, 2023 from the Condensed Consolidated Statements of Operations (column 'Nine Months Ended July 1, 2023'). Return the reported amount in USD millions, without currency symbols or commas. Do not use the 'Three Months Ended June 29, 2024', 'Three Months Ended July 1, 2023' or 'Nine Months Ended June 29, 2024' columns. If unavailable, return null."
+      },
+      "ytd_fy2023_selling_general_administrative": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Apple's Selling, general and administrative operating expense for the nine months ended July 1, 2023 from the Condensed Consolidated Statements of Operations (column 'Nine Months Ended July 1, 2023'). Return the reported amount in USD millions, without currency symbols or commas. Do not use the 'Three Months Ended June 29, 2024', 'Three Months Ended July 1, 2023' or 'Nine Months Ended June 29, 2024' columns. If unavailable, return null."
+      },
+      "ytd_fy2023_operating_income": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Apple's Operating income for the nine months ended July 1, 2023 from the Condensed Consolidated Statements of Operations (column 'Nine Months Ended July 1, 2023'). Return the reported amount in USD millions, without currency symbols or commas. Do not use segment operating income. Do not use the 'Three Months Ended June 29, 2024', 'Three Months Ended July 1, 2023' or 'Nine Months Ended June 29, 2024' columns. If unavailable, return null."
+      },
+      "ytd_fy2023_provision_for_income_taxes": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Apple's Provision for income taxes for the nine months ended July 1, 2023 from the Condensed Consolidated Statements of Operations (column 'Nine Months Ended July 1, 2023'). Return the reported amount in USD millions, without currency symbols or commas. Do not use the 'Three Months Ended June 29, 2024', 'Three Months Ended July 1, 2023' or 'Nine Months Ended June 29, 2024' columns. If unavailable, return null."
+      },
+      "ytd_fy2023_net_income": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Apple's Net income for the nine months ended July 1, 2023 from the Condensed Consolidated Statements of Operations (column 'Nine Months Ended July 1, 2023'). Return the reported amount in USD millions, without currency symbols or commas. Do not use the 'Three Months Ended June 29, 2024', 'Three Months Ended July 1, 2023' or 'Nine Months Ended June 29, 2024' columns. If unavailable, return null."
+      },
+      "ytd_fy2023_basic_eps": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Apple's Earnings per share: Basic for the nine months ended July 1, 2023 from the Condensed Consolidated Statements of Operations (column 'Nine Months Ended July 1, 2023'). Return the reported USD per-share amount without currency symbols. Do not use diluted EPS. Do not use the 'Three Months Ended June 29, 2024', 'Three Months Ended July 1, 2023' or 'Nine Months Ended June 29, 2024' columns. If unavailable, return null."
+      },
+      "ytd_fy2023_diluted_eps": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Apple's Earnings per share: Diluted for the nine months ended July 1, 2023 from the Condensed Consolidated Statements of Operations (column 'Nine Months Ended July 1, 2023'). Return the reported USD per-share amount without currency symbols. Do not use basic EPS. Do not use the 'Three Months Ended June 29, 2024', 'Three Months Ended July 1, 2023' or 'Nine Months Ended June 29, 2024' columns. If unavailable, return null."
+      },
+      "ytd_fy2023_diluted_shares": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Apple's Shares used in computing earnings per share: Diluted for the nine months ended July 1, 2023 from the Condensed Consolidated Statements of Operations (column 'Nine Months Ended July 1, 2023'). Return the reported number in thousands of shares, without commas. Do not use basic shares. Do not use the 'Three Months Ended June 29, 2024', 'Three Months Ended July 1, 2023' or 'Nine Months Ended June 29, 2024' columns. If unavailable, return null."
+      },
+      "q3_fy2024_products_gross_margin": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract the Products gross margin dollar amount for the three months ended June 29, 2024 from the Gross Margin table in Management's Discussion and Analysis. Return the reported amount in USD millions, without currency symbols or commas. Do not return the gross margin percentage. Do not use the 'Three Months Ended July 1, 2023', 'Nine Months Ended June 29, 2024' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "q3_fy2024_services_gross_margin": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract the Services gross margin dollar amount for the three months ended June 29, 2024 from the Gross Margin table in Management's Discussion and Analysis. Return the reported amount in USD millions, without currency symbols or commas. Do not return the gross margin percentage. Do not use the 'Three Months Ended July 1, 2023', 'Nine Months Ended June 29, 2024' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "q3_fy2024_effective_tax_rate_pct": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Apple's effective tax rate for the three months ended June 29, 2024 from the Provision for Income Taxes table in Management's Discussion and Analysis. Return percentage points, e.g. 15.9 for 15.9%. Do not use the statutory federal rate. Do not use the 'Three Months Ended July 1, 2023', 'Nine Months Ended June 29, 2024' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "q3_fy2023_products_gross_margin": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract the Products gross margin dollar amount for the three months ended July 1, 2023 from the Gross Margin table in Management's Discussion and Analysis. Return the reported amount in USD millions, without currency symbols or commas. Do not return the gross margin percentage. Do not use the 'Three Months Ended June 29, 2024', 'Nine Months Ended June 29, 2024' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "q3_fy2023_services_gross_margin": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract the Services gross margin dollar amount for the three months ended July 1, 2023 from the Gross Margin table in Management's Discussion and Analysis. Return the reported amount in USD millions, without currency symbols or commas. Do not return the gross margin percentage. Do not use the 'Three Months Ended June 29, 2024', 'Nine Months Ended June 29, 2024' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "q3_fy2023_effective_tax_rate_pct": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Apple's effective tax rate for the three months ended July 1, 2023 from the Provision for Income Taxes table in Management's Discussion and Analysis. Return percentage points, e.g. 15.9 for 15.9%. Do not use the statutory federal rate. Do not use the 'Three Months Ended June 29, 2024', 'Nine Months Ended June 29, 2024' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "ytd_fy2024_products_gross_margin": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract the Products gross margin dollar amount for the nine months ended June 29, 2024 from the Gross Margin table in Management's Discussion and Analysis. Return the reported amount in USD millions, without currency symbols or commas. Do not return the gross margin percentage. Do not use the 'Three Months Ended June 29, 2024', 'Three Months Ended July 1, 2023' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "ytd_fy2024_services_gross_margin": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract the Services gross margin dollar amount for the nine months ended June 29, 2024 from the Gross Margin table in Management's Discussion and Analysis. Return the reported amount in USD millions, without currency symbols or commas. Do not return the gross margin percentage. Do not use the 'Three Months Ended June 29, 2024', 'Three Months Ended July 1, 2023' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "ytd_fy2024_effective_tax_rate_pct": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Apple's effective tax rate for the nine months ended June 29, 2024 from the Provision for Income Taxes table in Management's Discussion and Analysis. Return percentage points, e.g. 15.9 for 15.9%. Do not use the statutory federal rate. Do not use the 'Three Months Ended June 29, 2024', 'Three Months Ended July 1, 2023' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "ytd_fy2023_products_gross_margin": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract the Products gross margin dollar amount for the nine months ended July 1, 2023 from the Gross Margin table in Management's Discussion and Analysis. Return the reported amount in USD millions, without currency symbols or commas. Do not return the gross margin percentage. Do not use the 'Three Months Ended June 29, 2024', 'Three Months Ended July 1, 2023' or 'Nine Months Ended June 29, 2024' columns. If unavailable, return null."
+      },
+      "ytd_fy2023_services_gross_margin": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract the Services gross margin dollar amount for the nine months ended July 1, 2023 from the Gross Margin table in Management's Discussion and Analysis. Return the reported amount in USD millions, without currency symbols or commas. Do not return the gross margin percentage. Do not use the 'Three Months Ended June 29, 2024', 'Three Months Ended July 1, 2023' or 'Nine Months Ended June 29, 2024' columns. If unavailable, return null."
+      },
+      "ytd_fy2023_effective_tax_rate_pct": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Apple's effective tax rate for the nine months ended July 1, 2023 from the Provision for Income Taxes table in Management's Discussion and Analysis. Return percentage points, e.g. 15.9 for 15.9%. Do not use the statutory federal rate. Do not use the 'Three Months Ended June 29, 2024', 'Three Months Ended July 1, 2023' or 'Nine Months Ended June 29, 2024' columns. If unavailable, return null."
+      },
+      "q3_fy2024_iphone_net_sales": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract iPhone net sales for the three months ended June 29, 2024 from the net sales by category table in Note 2, Revenue. Return the reported amount in USD millions, without currency symbols or commas. Do not use geographic segment sales or Products/Services totals. Do not use the 'Three Months Ended July 1, 2023', 'Nine Months Ended June 29, 2024' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "q3_fy2024_mac_net_sales": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Mac net sales for the three months ended June 29, 2024 from the net sales by category table in Note 2, Revenue. Return the reported amount in USD millions, without currency symbols or commas. Do not use geographic segment sales or Products/Services totals. Do not use the 'Three Months Ended July 1, 2023', 'Nine Months Ended June 29, 2024' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "q3_fy2024_ipad_net_sales": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract iPad net sales for the three months ended June 29, 2024 from the net sales by category table in Note 2, Revenue. Return the reported amount in USD millions, without currency symbols or commas. Do not use geographic segment sales or Products/Services totals. Do not use the 'Three Months Ended July 1, 2023', 'Nine Months Ended June 29, 2024' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "q3_fy2024_wearables_home_accessories_net_sales": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Wearables, Home and Accessories net sales for the three months ended June 29, 2024 from the net sales by category table in Note 2, Revenue. Return the reported amount in USD millions, without currency symbols or commas. Do not use geographic segment sales or Products/Services totals. Do not use the 'Three Months Ended July 1, 2023', 'Nine Months Ended June 29, 2024' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "q3_fy2024_services_category_net_sales": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Services net sales for the three months ended June 29, 2024 from the net sales by category table in Note 2, Revenue. Return the reported amount in USD millions, without currency symbols or commas. Do not use geographic segment sales or Products/Services totals. Do not use the 'Three Months Ended July 1, 2023', 'Nine Months Ended June 29, 2024' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "q3_fy2023_iphone_net_sales": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract iPhone net sales for the three months ended July 1, 2023 from the net sales by category table in Note 2, Revenue. Return the reported amount in USD millions, without currency symbols or commas. Do not use geographic segment sales or Products/Services totals. Do not use the 'Three Months Ended June 29, 2024', 'Nine Months Ended June 29, 2024' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "q3_fy2023_mac_net_sales": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Mac net sales for the three months ended July 1, 2023 from the net sales by category table in Note 2, Revenue. Return the reported amount in USD millions, without currency symbols or commas. Do not use geographic segment sales or Products/Services totals. Do not use the 'Three Months Ended June 29, 2024', 'Nine Months Ended June 29, 2024' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "q3_fy2023_ipad_net_sales": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract iPad net sales for the three months ended July 1, 2023 from the net sales by category table in Note 2, Revenue. Return the reported amount in USD millions, without currency symbols or commas. Do not use geographic segment sales or Products/Services totals. Do not use the 'Three Months Ended June 29, 2024', 'Nine Months Ended June 29, 2024' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "q3_fy2023_wearables_home_accessories_net_sales": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Wearables, Home and Accessories net sales for the three months ended July 1, 2023 from the net sales by category table in Note 2, Revenue. Return the reported amount in USD millions, without currency symbols or commas. Do not use geographic segment sales or Products/Services totals. Do not use the 'Three Months Ended June 29, 2024', 'Nine Months Ended June 29, 2024' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "q3_fy2023_services_category_net_sales": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Services net sales for the three months ended July 1, 2023 from the net sales by category table in Note 2, Revenue. Return the reported amount in USD millions, without currency symbols or commas. Do not use geographic segment sales or Products/Services totals. Do not use the 'Three Months Ended June 29, 2024', 'Nine Months Ended June 29, 2024' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "ytd_fy2024_iphone_net_sales": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract iPhone net sales for the nine months ended June 29, 2024 from the net sales by category table in Note 2, Revenue. Return the reported amount in USD millions, without currency symbols or commas. Do not use geographic segment sales or Products/Services totals. Do not use the 'Three Months Ended June 29, 2024', 'Three Months Ended July 1, 2023' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "ytd_fy2024_mac_net_sales": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Mac net sales for the nine months ended June 29, 2024 from the net sales by category table in Note 2, Revenue. Return the reported amount in USD millions, without currency symbols or commas. Do not use geographic segment sales or Products/Services totals. Do not use the 'Three Months Ended June 29, 2024', 'Three Months Ended July 1, 2023' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "ytd_fy2024_ipad_net_sales": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract iPad net sales for the nine months ended June 29, 2024 from the net sales by category table in Note 2, Revenue. Return the reported amount in USD millions, without currency symbols or commas. Do not use geographic segment sales or Products/Services totals. Do not use the 'Three Months Ended June 29, 2024', 'Three Months Ended July 1, 2023' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "ytd_fy2024_wearables_home_accessories_net_sales": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Wearables, Home and Accessories net sales for the nine months ended June 29, 2024 from the net sales by category table in Note 2, Revenue. Return the reported amount in USD millions, without currency symbols or commas. Do not use geographic segment sales or Products/Services totals. Do not use the 'Three Months Ended June 29, 2024', 'Three Months Ended July 1, 2023' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "ytd_fy2024_services_category_net_sales": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Services net sales for the nine months ended June 29, 2024 from the net sales by category table in Note 2, Revenue. Return the reported amount in USD millions, without currency symbols or commas. Do not use geographic segment sales or Products/Services totals. Do not use the 'Three Months Ended June 29, 2024', 'Three Months Ended July 1, 2023' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "ytd_fy2023_iphone_net_sales": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract iPhone net sales for the nine months ended July 1, 2023 from the net sales by category table in Note 2, Revenue. Return the reported amount in USD millions, without currency symbols or commas. Do not use geographic segment sales or Products/Services totals. Do not use the 'Three Months Ended June 29, 2024', 'Three Months Ended July 1, 2023' or 'Nine Months Ended June 29, 2024' columns. If unavailable, return null."
+      },
+      "ytd_fy2023_mac_net_sales": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Mac net sales for the nine months ended July 1, 2023 from the net sales by category table in Note 2, Revenue. Return the reported amount in USD millions, without currency symbols or commas. Do not use geographic segment sales or Products/Services totals. Do not use the 'Three Months Ended June 29, 2024', 'Three Months Ended July 1, 2023' or 'Nine Months Ended June 29, 2024' columns. If unavailable, return null."
+      },
+      "ytd_fy2023_ipad_net_sales": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract iPad net sales for the nine months ended July 1, 2023 from the net sales by category table in Note 2, Revenue. Return the reported amount in USD millions, without currency symbols or commas. Do not use geographic segment sales or Products/Services totals. Do not use the 'Three Months Ended June 29, 2024', 'Three Months Ended July 1, 2023' or 'Nine Months Ended June 29, 2024' columns. If unavailable, return null."
+      },
+      "ytd_fy2023_wearables_home_accessories_net_sales": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Wearables, Home and Accessories net sales for the nine months ended July 1, 2023 from the net sales by category table in Note 2, Revenue. Return the reported amount in USD millions, without currency symbols or commas. Do not use geographic segment sales or Products/Services totals. Do not use the 'Three Months Ended June 29, 2024', 'Three Months Ended July 1, 2023' or 'Nine Months Ended June 29, 2024' columns. If unavailable, return null."
+      },
+      "ytd_fy2023_services_category_net_sales": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Services net sales for the nine months ended July 1, 2023 from the net sales by category table in Note 2, Revenue. Return the reported amount in USD millions, without currency symbols or commas. Do not use geographic segment sales or Products/Services totals. Do not use the 'Three Months Ended June 29, 2024', 'Three Months Ended July 1, 2023' or 'Nine Months Ended June 29, 2024' columns. If unavailable, return null."
+      },
+      "q3_fy2024_americas_net_sales": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Americas segment net sales for the three months ended June 29, 2024 from the Segment Information and Geographic Data note. Return the reported amount in USD millions, without currency symbols or commas. Do not use product category sales or consolidated sales. Do not use the 'Three Months Ended July 1, 2023', 'Nine Months Ended June 29, 2024' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "q3_fy2024_americas_operating_income": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Americas segment operating income for the three months ended June 29, 2024 from the Segment Information and Geographic Data note. Return the reported amount in USD millions, without currency symbols or commas. Do not use segment net sales or consolidated operating income. Do not use the 'Three Months Ended July 1, 2023', 'Nine Months Ended June 29, 2024' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "q3_fy2024_europe_net_sales": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Europe segment net sales for the three months ended June 29, 2024 from the Segment Information and Geographic Data note. Return the reported amount in USD millions, without currency symbols or commas. Do not use product category sales or consolidated sales. Do not use the 'Three Months Ended July 1, 2023', 'Nine Months Ended June 29, 2024' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "q3_fy2024_europe_operating_income": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Europe segment operating income for the three months ended June 29, 2024 from the Segment Information and Geographic Data note. Return the reported amount in USD millions, without currency symbols or commas. Do not use segment net sales or consolidated operating income. Do not use the 'Three Months Ended July 1, 2023', 'Nine Months Ended June 29, 2024' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "q3_fy2024_greater_china_net_sales": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Greater China segment net sales for the three months ended June 29, 2024 from the Segment Information and Geographic Data note. Return the reported amount in USD millions, without currency symbols or commas. Do not use product category sales or consolidated sales. Do not use the 'Three Months Ended July 1, 2023', 'Nine Months Ended June 29, 2024' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "q3_fy2024_greater_china_operating_income": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Greater China segment operating income for the three months ended June 29, 2024 from the Segment Information and Geographic Data note. Return the reported amount in USD millions, without currency symbols or commas. Do not use segment net sales or consolidated operating income. Do not use the 'Three Months Ended July 1, 2023', 'Nine Months Ended June 29, 2024' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "q3_fy2024_japan_net_sales": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Japan segment net sales for the three months ended June 29, 2024 from the Segment Information and Geographic Data note. Return the reported amount in USD millions, without currency symbols or commas. Do not use product category sales or consolidated sales. Do not use the 'Three Months Ended July 1, 2023', 'Nine Months Ended June 29, 2024' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "q3_fy2024_japan_operating_income": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Japan segment operating income for the three months ended June 29, 2024 from the Segment Information and Geographic Data note. Return the reported amount in USD millions, without currency symbols or commas. Do not use segment net sales or consolidated operating income. Do not use the 'Three Months Ended July 1, 2023', 'Nine Months Ended June 29, 2024' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "q3_fy2024_rest_of_asia_pacific_net_sales": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Rest of Asia Pacific segment net sales for the three months ended June 29, 2024 from the Segment Information and Geographic Data note. Return the reported amount in USD millions, without currency symbols or commas. Do not use product category sales or consolidated sales. Do not use the 'Three Months Ended July 1, 2023', 'Nine Months Ended June 29, 2024' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "q3_fy2024_rest_of_asia_pacific_operating_income": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Rest of Asia Pacific segment operating income for the three months ended June 29, 2024 from the Segment Information and Geographic Data note. Return the reported amount in USD millions, without currency symbols or commas. Do not use segment net sales or consolidated operating income. Do not use the 'Three Months Ended July 1, 2023', 'Nine Months Ended June 29, 2024' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "q3_fy2024_segment_operating_income_total": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract total 'Segment operating income' for the three months ended June 29, 2024 from the reconciliation of segment operating income to the Condensed Consolidated Statements of Operations. Return the reported amount in USD millions, without currency symbols or commas. Do not use the 'Three Months Ended July 1, 2023', 'Nine Months Ended June 29, 2024' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "q3_fy2024_other_corporate_expenses": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract 'Other corporate expenses, net' for the three months ended June 29, 2024 from the reconciliation of segment operating income to the Condensed Consolidated Statements of Operations. Return the reported amount in USD millions, without currency symbols or commas. Return the positive magnitude. Do not use the 'Three Months Ended July 1, 2023', 'Nine Months Ended June 29, 2024' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "q3_fy2023_americas_net_sales": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Americas segment net sales for the three months ended July 1, 2023 from the Segment Information and Geographic Data note. Return the reported amount in USD millions, without currency symbols or commas. Do not use product category sales or consolidated sales. Do not use the 'Three Months Ended June 29, 2024', 'Nine Months Ended June 29, 2024' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "q3_fy2023_americas_operating_income": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Americas segment operating income for the three months ended July 1, 2023 from the Segment Information and Geographic Data note. Return the reported amount in USD millions, without currency symbols or commas. Do not use segment net sales or consolidated operating income. Do not use the 'Three Months Ended June 29, 2024', 'Nine Months Ended June 29, 2024' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "q3_fy2023_europe_net_sales": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Europe segment net sales for the three months ended July 1, 2023 from the Segment Information and Geographic Data note. Return the reported amount in USD millions, without currency symbols or commas. Do not use product category sales or consolidated sales. Do not use the 'Three Months Ended June 29, 2024', 'Nine Months Ended June 29, 2024' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "q3_fy2023_europe_operating_income": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Europe segment operating income for the three months ended July 1, 2023 from the Segment Information and Geographic Data note. Return the reported amount in USD millions, without currency symbols or commas. Do not use segment net sales or consolidated operating income. Do not use the 'Three Months Ended June 29, 2024', 'Nine Months Ended June 29, 2024' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "q3_fy2023_greater_china_net_sales": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Greater China segment net sales for the three months ended July 1, 2023 from the Segment Information and Geographic Data note. Return the reported amount in USD millions, without currency symbols or commas. Do not use product category sales or consolidated sales. Do not use the 'Three Months Ended June 29, 2024', 'Nine Months Ended June 29, 2024' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "q3_fy2023_greater_china_operating_income": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Greater China segment operating income for the three months ended July 1, 2023 from the Segment Information and Geographic Data note. Return the reported amount in USD millions, without currency symbols or commas. Do not use segment net sales or consolidated operating income. Do not use the 'Three Months Ended June 29, 2024', 'Nine Months Ended June 29, 2024' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "q3_fy2023_japan_net_sales": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Japan segment net sales for the three months ended July 1, 2023 from the Segment Information and Geographic Data note. Return the reported amount in USD millions, without currency symbols or commas. Do not use product category sales or consolidated sales. Do not use the 'Three Months Ended June 29, 2024', 'Nine Months Ended June 29, 2024' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "q3_fy2023_japan_operating_income": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Japan segment operating income for the three months ended July 1, 2023 from the Segment Information and Geographic Data note. Return the reported amount in USD millions, without currency symbols or commas. Do not use segment net sales or consolidated operating income. Do not use the 'Three Months Ended June 29, 2024', 'Nine Months Ended June 29, 2024' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "q3_fy2023_rest_of_asia_pacific_net_sales": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Rest of Asia Pacific segment net sales for the three months ended July 1, 2023 from the Segment Information and Geographic Data note. Return the reported amount in USD millions, without currency symbols or commas. Do not use product category sales or consolidated sales. Do not use the 'Three Months Ended June 29, 2024', 'Nine Months Ended June 29, 2024' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "q3_fy2023_rest_of_asia_pacific_operating_income": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Rest of Asia Pacific segment operating income for the three months ended July 1, 2023 from the Segment Information and Geographic Data note. Return the reported amount in USD millions, without currency symbols or commas. Do not use segment net sales or consolidated operating income. Do not use the 'Three Months Ended June 29, 2024', 'Nine Months Ended June 29, 2024' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "q3_fy2023_segment_operating_income_total": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract total 'Segment operating income' for the three months ended July 1, 2023 from the reconciliation of segment operating income to the Condensed Consolidated Statements of Operations. Return the reported amount in USD millions, without currency symbols or commas. Do not use the 'Three Months Ended June 29, 2024', 'Nine Months Ended June 29, 2024' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "q3_fy2023_other_corporate_expenses": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract 'Other corporate expenses, net' for the three months ended July 1, 2023 from the reconciliation of segment operating income to the Condensed Consolidated Statements of Operations. Return the reported amount in USD millions, without currency symbols or commas. Return the positive magnitude. Do not use the 'Three Months Ended June 29, 2024', 'Nine Months Ended June 29, 2024' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "ytd_fy2024_americas_net_sales": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Americas segment net sales for the nine months ended June 29, 2024 from the Segment Information and Geographic Data note. Return the reported amount in USD millions, without currency symbols or commas. Do not use product category sales or consolidated sales. Do not use the 'Three Months Ended June 29, 2024', 'Three Months Ended July 1, 2023' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "ytd_fy2024_americas_operating_income": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Americas segment operating income for the nine months ended June 29, 2024 from the Segment Information and Geographic Data note. Return the reported amount in USD millions, without currency symbols or commas. Do not use segment net sales or consolidated operating income. Do not use the 'Three Months Ended June 29, 2024', 'Three Months Ended July 1, 2023' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "ytd_fy2024_europe_net_sales": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Europe segment net sales for the nine months ended June 29, 2024 from the Segment Information and Geographic Data note. Return the reported amount in USD millions, without currency symbols or commas. Do not use product category sales or consolidated sales. Do not use the 'Three Months Ended June 29, 2024', 'Three Months Ended July 1, 2023' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "ytd_fy2024_europe_operating_income": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Europe segment operating income for the nine months ended June 29, 2024 from the Segment Information and Geographic Data note. Return the reported amount in USD millions, without currency symbols or commas. Do not use segment net sales or consolidated operating income. Do not use the 'Three Months Ended June 29, 2024', 'Three Months Ended July 1, 2023' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "ytd_fy2024_greater_china_net_sales": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Greater China segment net sales for the nine months ended June 29, 2024 from the Segment Information and Geographic Data note. Return the reported amount in USD millions, without currency symbols or commas. Do not use product category sales or consolidated sales. Do not use the 'Three Months Ended June 29, 2024', 'Three Months Ended July 1, 2023' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "ytd_fy2024_greater_china_operating_income": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Greater China segment operating income for the nine months ended June 29, 2024 from the Segment Information and Geographic Data note. Return the reported amount in USD millions, without currency symbols or commas. Do not use segment net sales or consolidated operating income. Do not use the 'Three Months Ended June 29, 2024', 'Three Months Ended July 1, 2023' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "ytd_fy2024_japan_net_sales": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Japan segment net sales for the nine months ended June 29, 2024 from the Segment Information and Geographic Data note. Return the reported amount in USD millions, without currency symbols or commas. Do not use product category sales or consolidated sales. Do not use the 'Three Months Ended June 29, 2024', 'Three Months Ended July 1, 2023' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "ytd_fy2024_japan_operating_income": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Japan segment operating income for the nine months ended June 29, 2024 from the Segment Information and Geographic Data note. Return the reported amount in USD millions, without currency symbols or commas. Do not use segment net sales or consolidated operating income. Do not use the 'Three Months Ended June 29, 2024', 'Three Months Ended July 1, 2023' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "ytd_fy2024_rest_of_asia_pacific_net_sales": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Rest of Asia Pacific segment net sales for the nine months ended June 29, 2024 from the Segment Information and Geographic Data note. Return the reported amount in USD millions, without currency symbols or commas. Do not use product category sales or consolidated sales. Do not use the 'Three Months Ended June 29, 2024', 'Three Months Ended July 1, 2023' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "ytd_fy2024_rest_of_asia_pacific_operating_income": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Rest of Asia Pacific segment operating income for the nine months ended June 29, 2024 from the Segment Information and Geographic Data note. Return the reported amount in USD millions, without currency symbols or commas. Do not use segment net sales or consolidated operating income. Do not use the 'Three Months Ended June 29, 2024', 'Three Months Ended July 1, 2023' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "ytd_fy2024_segment_operating_income_total": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract total 'Segment operating income' for the nine months ended June 29, 2024 from the reconciliation of segment operating income to the Condensed Consolidated Statements of Operations. Return the reported amount in USD millions, without currency symbols or commas. Do not use the 'Three Months Ended June 29, 2024', 'Three Months Ended July 1, 2023' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "ytd_fy2024_other_corporate_expenses": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract 'Other corporate expenses, net' for the nine months ended June 29, 2024 from the reconciliation of segment operating income to the Condensed Consolidated Statements of Operations. Return the reported amount in USD millions, without currency symbols or commas. Return the positive magnitude. Do not use the 'Three Months Ended June 29, 2024', 'Three Months Ended July 1, 2023' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "ytd_fy2023_americas_net_sales": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Americas segment net sales for the nine months ended July 1, 2023 from the Segment Information and Geographic Data note. Return the reported amount in USD millions, without currency symbols or commas. Do not use product category sales or consolidated sales. Do not use the 'Three Months Ended June 29, 2024', 'Three Months Ended July 1, 2023' or 'Nine Months Ended June 29, 2024' columns. If unavailable, return null."
+      },
+      "ytd_fy2023_americas_operating_income": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Americas segment operating income for the nine months ended July 1, 2023 from the Segment Information and Geographic Data note. Return the reported amount in USD millions, without currency symbols or commas. Do not use segment net sales or consolidated operating income. Do not use the 'Three Months Ended June 29, 2024', 'Three Months Ended July 1, 2023' or 'Nine Months Ended June 29, 2024' columns. If unavailable, return null."
+      },
+      "ytd_fy2023_europe_net_sales": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Europe segment net sales for the nine months ended July 1, 2023 from the Segment Information and Geographic Data note. Return the reported amount in USD millions, without currency symbols or commas. Do not use product category sales or consolidated sales. Do not use the 'Three Months Ended June 29, 2024', 'Three Months Ended July 1, 2023' or 'Nine Months Ended June 29, 2024' columns. If unavailable, return null."
+      },
+      "ytd_fy2023_europe_operating_income": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Europe segment operating income for the nine months ended July 1, 2023 from the Segment Information and Geographic Data note. Return the reported amount in USD millions, without currency symbols or commas. Do not use segment net sales or consolidated operating income. Do not use the 'Three Months Ended June 29, 2024', 'Three Months Ended July 1, 2023' or 'Nine Months Ended June 29, 2024' columns. If unavailable, return null."
+      },
+      "ytd_fy2023_greater_china_net_sales": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Greater China segment net sales for the nine months ended July 1, 2023 from the Segment Information and Geographic Data note. Return the reported amount in USD millions, without currency symbols or commas. Do not use product category sales or consolidated sales. Do not use the 'Three Months Ended June 29, 2024', 'Three Months Ended July 1, 2023' or 'Nine Months Ended June 29, 2024' columns. If unavailable, return null."
+      },
+      "ytd_fy2023_greater_china_operating_income": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Greater China segment operating income for the nine months ended July 1, 2023 from the Segment Information and Geographic Data note. Return the reported amount in USD millions, without currency symbols or commas. Do not use segment net sales or consolidated operating income. Do not use the 'Three Months Ended June 29, 2024', 'Three Months Ended July 1, 2023' or 'Nine Months Ended June 29, 2024' columns. If unavailable, return null."
+      },
+      "ytd_fy2023_japan_net_sales": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Japan segment net sales for the nine months ended July 1, 2023 from the Segment Information and Geographic Data note. Return the reported amount in USD millions, without currency symbols or commas. Do not use product category sales or consolidated sales. Do not use the 'Three Months Ended June 29, 2024', 'Three Months Ended July 1, 2023' or 'Nine Months Ended June 29, 2024' columns. If unavailable, return null."
+      },
+      "ytd_fy2023_japan_operating_income": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Japan segment operating income for the nine months ended July 1, 2023 from the Segment Information and Geographic Data note. Return the reported amount in USD millions, without currency symbols or commas. Do not use segment net sales or consolidated operating income. Do not use the 'Three Months Ended June 29, 2024', 'Three Months Ended July 1, 2023' or 'Nine Months Ended June 29, 2024' columns. If unavailable, return null."
+      },
+      "ytd_fy2023_rest_of_asia_pacific_net_sales": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Rest of Asia Pacific segment net sales for the nine months ended July 1, 2023 from the Segment Information and Geographic Data note. Return the reported amount in USD millions, without currency symbols or commas. Do not use product category sales or consolidated sales. Do not use the 'Three Months Ended June 29, 2024', 'Three Months Ended July 1, 2023' or 'Nine Months Ended June 29, 2024' columns. If unavailable, return null."
+      },
+      "ytd_fy2023_rest_of_asia_pacific_operating_income": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract Rest of Asia Pacific segment operating income for the nine months ended July 1, 2023 from the Segment Information and Geographic Data note. Return the reported amount in USD millions, without currency symbols or commas. Do not use segment net sales or consolidated operating income. Do not use the 'Three Months Ended June 29, 2024', 'Three Months Ended July 1, 2023' or 'Nine Months Ended June 29, 2024' columns. If unavailable, return null."
+      },
+      "ytd_fy2023_segment_operating_income_total": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract total 'Segment operating income' for the nine months ended July 1, 2023 from the reconciliation of segment operating income to the Condensed Consolidated Statements of Operations. Return the reported amount in USD millions, without currency symbols or commas. Do not use the 'Three Months Ended June 29, 2024', 'Three Months Ended July 1, 2023' or 'Nine Months Ended June 29, 2024' columns. If unavailable, return null."
+      },
+      "ytd_fy2023_other_corporate_expenses": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract 'Other corporate expenses, net' for the nine months ended July 1, 2023 from the reconciliation of segment operating income to the Condensed Consolidated Statements of Operations. Return the reported amount in USD millions, without currency symbols or commas. Return the positive magnitude. Do not use the 'Three Months Ended June 29, 2024', 'Three Months Ended July 1, 2023' or 'Nine Months Ended June 29, 2024' columns. If unavailable, return null."
+      },
+      "ytd_fy2024_operating_cash_flow": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract 'Cash generated by operating activities' for the nine months ended June 29, 2024 from the Condensed Consolidated Statements of Cash Flows. Return the reported amount in USD millions, without currency symbols or commas. Do not use the nine months ended July 1, 2023 column. If unavailable, return null."
+      },
+      "ytd_fy2024_share_based_compensation": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract 'Share-based compensation expense' for the nine months ended June 29, 2024 from the Condensed Consolidated Statements of Cash Flows. Return the reported amount in USD millions, without currency symbols or commas. Do not use the nine months ended July 1, 2023 column. If unavailable, return null."
+      },
+      "ytd_fy2024_depreciation_amortization": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract 'Depreciation and amortization' for the nine months ended June 29, 2024 from the Condensed Consolidated Statements of Cash Flows. Return the reported amount in USD millions, without currency symbols or commas. Do not use the nine months ended July 1, 2023 column. If unavailable, return null."
+      },
+      "ytd_fy2024_purchases_ppe": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract 'Payments for acquisition of property, plant and equipment' for the nine months ended June 29, 2024 from the Condensed Consolidated Statements of Cash Flows. Return the reported amount in USD millions, without currency symbols or commas. Return the positive magnitude of the cash outflow. Do not use the nine months ended July 1, 2023 column. If unavailable, return null."
+      },
+      "ytd_fy2024_purchases_marketable_securities": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract 'Purchases of marketable securities' for the nine months ended June 29, 2024 from the Condensed Consolidated Statements of Cash Flows. Return the reported amount in USD millions, without currency symbols or commas. Return the positive magnitude of the cash outflow. Do not use the nine months ended July 1, 2023 column. If unavailable, return null."
+      },
+      "ytd_fy2024_maturities_marketable_securities": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract 'Proceeds from maturities of marketable securities' for the nine months ended June 29, 2024 from the Condensed Consolidated Statements of Cash Flows. Return the reported amount in USD millions, without currency symbols or commas. Do not use the nine months ended July 1, 2023 column. If unavailable, return null."
+      },
+      "ytd_fy2024_sales_marketable_securities": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract 'Proceeds from sales of marketable securities' for the nine months ended June 29, 2024 from the Condensed Consolidated Statements of Cash Flows. Return the reported amount in USD millions, without currency symbols or commas. Do not use the nine months ended July 1, 2023 column. If unavailable, return null."
+      },
+      "ytd_fy2024_investing_cash_flow": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract 'Cash generated by investing activities' for the nine months ended June 29, 2024 from the Condensed Consolidated Statements of Cash Flows. Return the reported amount in USD millions, without currency symbols or commas. Return a negative number only if the source shows parentheses. Do not use the nine months ended July 1, 2023 column. If unavailable, return null."
+      },
+      "ytd_fy2024_net_share_settlement_taxes": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract 'Payments for taxes related to net share settlement of equity awards' for the nine months ended June 29, 2024 from the Condensed Consolidated Statements of Cash Flows. Return the reported amount in USD millions, without currency symbols or commas. Return the positive magnitude of the cash outflow. Do not use the nine months ended July 1, 2023 column. If unavailable, return null."
+      },
+      "ytd_fy2024_dividends_paid": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract 'Payments for dividends and dividend equivalents' for the nine months ended June 29, 2024 from the Condensed Consolidated Statements of Cash Flows. Return the reported amount in USD millions, without currency symbols or commas. Return the positive magnitude of the cash outflow. Do not use the nine months ended July 1, 2023 column. If unavailable, return null."
+      },
+      "ytd_fy2024_share_repurchases": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract 'Repurchases of common stock' for the nine months ended June 29, 2024 from the Condensed Consolidated Statements of Cash Flows. Return the reported amount in USD millions, without currency symbols or commas. Return the positive magnitude of the cash outflow. Do not use the nine months ended July 1, 2023 column. If unavailable, return null."
+      },
+      "ytd_fy2024_term_debt_proceeds": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract 'Proceeds from issuance of term debt, net' for the nine months ended June 29, 2024 from the Condensed Consolidated Statements of Cash Flows. Return the reported amount in USD millions, without currency symbols or commas. Return null if the cell shows a dash. Do not use the nine months ended July 1, 2023 column. If unavailable, return null."
+      },
+      "ytd_fy2024_term_debt_repayments": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract 'Repayments of term debt' for the nine months ended June 29, 2024 from the Condensed Consolidated Statements of Cash Flows. Return the reported amount in USD millions, without currency symbols or commas. Return the positive magnitude of the cash outflow. Do not use the nine months ended July 1, 2023 column. If unavailable, return null."
+      },
+      "ytd_fy2024_commercial_paper_net": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract 'Repayments of commercial paper, net' for the nine months ended June 29, 2024 from the Condensed Consolidated Statements of Cash Flows. Return the reported amount in USD millions, without currency symbols or commas. Return a negative number for net repayments (the source shows parentheses). Do not use the nine months ended July 1, 2023 column. If unavailable, return null."
+      },
+      "ytd_fy2024_financing_cash_flow": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract 'Cash used in financing activities' for the nine months ended June 29, 2024 from the Condensed Consolidated Statements of Cash Flows. Return the reported amount in USD millions, without currency symbols or commas. Return a negative number (the source shows parentheses). Do not use the nine months ended July 1, 2023 column. If unavailable, return null."
+      },
+      "ytd_fy2024_beginning_cash": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract 'Cash, cash equivalents and restricted cash, beginning balances' for the nine months ended June 29, 2024 from the Condensed Consolidated Statements of Cash Flows. Return the reported amount in USD millions, without currency symbols or commas. Do not use the nine months ended July 1, 2023 column. If unavailable, return null."
+      },
+      "ytd_fy2024_ending_cash": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract 'Cash, cash equivalents and restricted cash, ending balances' for the nine months ended June 29, 2024 from the Condensed Consolidated Statements of Cash Flows. Return the reported amount in USD millions, without currency symbols or commas. Do not use the nine months ended July 1, 2023 column. If unavailable, return null."
+      },
+      "ytd_fy2024_cash_paid_income_taxes": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract 'Supplemental cash flow disclosure: Cash paid for income taxes, net' for the nine months ended June 29, 2024 from the Condensed Consolidated Statements of Cash Flows. Return the reported amount in USD millions, without currency symbols or commas. Do not use the nine months ended July 1, 2023 column. If unavailable, return null."
+      },
+      "ytd_fy2023_operating_cash_flow": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract 'Cash generated by operating activities' for the nine months ended July 1, 2023 from the Condensed Consolidated Statements of Cash Flows. Return the reported amount in USD millions, without currency symbols or commas. Do not use the nine months ended June 29, 2024 column. If unavailable, return null."
+      },
+      "ytd_fy2023_share_based_compensation": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract 'Share-based compensation expense' for the nine months ended July 1, 2023 from the Condensed Consolidated Statements of Cash Flows. Return the reported amount in USD millions, without currency symbols or commas. Do not use the nine months ended June 29, 2024 column. If unavailable, return null."
+      },
+      "ytd_fy2023_depreciation_amortization": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract 'Depreciation and amortization' for the nine months ended July 1, 2023 from the Condensed Consolidated Statements of Cash Flows. Return the reported amount in USD millions, without currency symbols or commas. Do not use the nine months ended June 29, 2024 column. If unavailable, return null."
+      },
+      "ytd_fy2023_purchases_ppe": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract 'Payments for acquisition of property, plant and equipment' for the nine months ended July 1, 2023 from the Condensed Consolidated Statements of Cash Flows. Return the reported amount in USD millions, without currency symbols or commas. Return the positive magnitude of the cash outflow. Do not use the nine months ended June 29, 2024 column. If unavailable, return null."
+      },
+      "ytd_fy2023_purchases_marketable_securities": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract 'Purchases of marketable securities' for the nine months ended July 1, 2023 from the Condensed Consolidated Statements of Cash Flows. Return the reported amount in USD millions, without currency symbols or commas. Return the positive magnitude of the cash outflow. Do not use the nine months ended June 29, 2024 column. If unavailable, return null."
+      },
+      "ytd_fy2023_maturities_marketable_securities": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract 'Proceeds from maturities of marketable securities' for the nine months ended July 1, 2023 from the Condensed Consolidated Statements of Cash Flows. Return the reported amount in USD millions, without currency symbols or commas. Do not use the nine months ended June 29, 2024 column. If unavailable, return null."
+      },
+      "ytd_fy2023_sales_marketable_securities": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract 'Proceeds from sales of marketable securities' for the nine months ended July 1, 2023 from the Condensed Consolidated Statements of Cash Flows. Return the reported amount in USD millions, without currency symbols or commas. Do not use the nine months ended June 29, 2024 column. If unavailable, return null."
+      },
+      "ytd_fy2023_investing_cash_flow": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract 'Cash generated by investing activities' for the nine months ended July 1, 2023 from the Condensed Consolidated Statements of Cash Flows. Return the reported amount in USD millions, without currency symbols or commas. Return a negative number only if the source shows parentheses. Do not use the nine months ended June 29, 2024 column. If unavailable, return null."
+      },
+      "ytd_fy2023_net_share_settlement_taxes": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract 'Payments for taxes related to net share settlement of equity awards' for the nine months ended July 1, 2023 from the Condensed Consolidated Statements of Cash Flows. Return the reported amount in USD millions, without currency symbols or commas. Return the positive magnitude of the cash outflow. Do not use the nine months ended June 29, 2024 column. If unavailable, return null."
+      },
+      "ytd_fy2023_dividends_paid": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract 'Payments for dividends and dividend equivalents' for the nine months ended July 1, 2023 from the Condensed Consolidated Statements of Cash Flows. Return the reported amount in USD millions, without currency symbols or commas. Return the positive magnitude of the cash outflow. Do not use the nine months ended June 29, 2024 column. If unavailable, return null."
+      },
+      "ytd_fy2023_share_repurchases": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract 'Repurchases of common stock' for the nine months ended July 1, 2023 from the Condensed Consolidated Statements of Cash Flows. Return the reported amount in USD millions, without currency symbols or commas. Return the positive magnitude of the cash outflow. Do not use the nine months ended June 29, 2024 column. If unavailable, return null."
+      },
+      "ytd_fy2023_term_debt_proceeds": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract 'Proceeds from issuance of term debt, net' for the nine months ended July 1, 2023 from the Condensed Consolidated Statements of Cash Flows. Return the reported amount in USD millions, without currency symbols or commas. Return null if the cell shows a dash. Do not use the nine months ended June 29, 2024 column. If unavailable, return null."
+      },
+      "ytd_fy2023_term_debt_repayments": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract 'Repayments of term debt' for the nine months ended July 1, 2023 from the Condensed Consolidated Statements of Cash Flows. Return the reported amount in USD millions, without currency symbols or commas. Return the positive magnitude of the cash outflow. Do not use the nine months ended June 29, 2024 column. If unavailable, return null."
+      },
+      "ytd_fy2023_commercial_paper_net": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract 'Repayments of commercial paper, net' for the nine months ended July 1, 2023 from the Condensed Consolidated Statements of Cash Flows. Return the reported amount in USD millions, without currency symbols or commas. Return a negative number for net repayments (the source shows parentheses). Do not use the nine months ended June 29, 2024 column. If unavailable, return null."
+      },
+      "ytd_fy2023_financing_cash_flow": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract 'Cash used in financing activities' for the nine months ended July 1, 2023 from the Condensed Consolidated Statements of Cash Flows. Return the reported amount in USD millions, without currency symbols or commas. Return a negative number (the source shows parentheses). Do not use the nine months ended June 29, 2024 column. If unavailable, return null."
+      },
+      "ytd_fy2023_beginning_cash": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract 'Cash, cash equivalents and restricted cash, beginning balances' for the nine months ended July 1, 2023 from the Condensed Consolidated Statements of Cash Flows. Return the reported amount in USD millions, without currency symbols or commas. Do not use the nine months ended June 29, 2024 column. If unavailable, return null."
+      },
+      "ytd_fy2023_ending_cash": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract 'Cash, cash equivalents and restricted cash, ending balances' for the nine months ended July 1, 2023 from the Condensed Consolidated Statements of Cash Flows. Return the reported amount in USD millions, without currency symbols or commas. Do not use the nine months ended June 29, 2024 column. If unavailable, return null."
+      },
+      "ytd_fy2023_cash_paid_income_taxes": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract 'Supplemental cash flow disclosure: Cash paid for income taxes, net' for the nine months ended July 1, 2023 from the Condensed Consolidated Statements of Cash Flows. Return the reported amount in USD millions, without currency symbols or commas. Do not use the nine months ended June 29, 2024 column. If unavailable, return null."
+      },
+      "jun2024_cash_cash_equivalents": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract 'Cash and cash equivalents' as of June 29, 2024 from the Condensed Consolidated Balance Sheets. Return the reported amount in USD millions, without currency symbols or commas. Do not include marketable securities or restricted cash. Do not use the September 30, 2023 column. If unavailable, return null."
+      },
+      "jun2024_current_marketable_securities": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract 'Marketable securities (current assets)' as of June 29, 2024 from the Condensed Consolidated Balance Sheets. Return the reported amount in USD millions, without currency symbols or commas. Do not use non-current marketable securities. Do not use the September 30, 2023 column. If unavailable, return null."
+      },
+      "jun2024_non_current_marketable_securities": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract 'Marketable securities (non-current assets)' as of June 29, 2024 from the Condensed Consolidated Balance Sheets. Return the reported amount in USD millions, without currency symbols or commas. Do not use current marketable securities. Do not use the September 30, 2023 column. If unavailable, return null."
+      },
+      "jun2024_inventories": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract 'Inventories' as of June 29, 2024 from the Condensed Consolidated Balance Sheets. Return the reported amount in USD millions, without currency symbols or commas. Do not use the September 30, 2023 column. If unavailable, return null."
+      },
+      "jun2024_total_assets": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract 'Total assets' as of June 29, 2024 from the Condensed Consolidated Balance Sheets. Return the reported amount in USD millions, without currency symbols or commas. Do not use the September 30, 2023 column. If unavailable, return null."
+      },
+      "jun2024_deferred_revenue_current": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract 'Deferred revenue (current liabilities)' as of June 29, 2024 from the Condensed Consolidated Balance Sheets. Return the reported amount in USD millions, without currency symbols or commas. Do not use the September 30, 2023 column. If unavailable, return null."
+      },
+      "jun2024_commercial_paper": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract 'Commercial paper' as of June 29, 2024 from the Condensed Consolidated Balance Sheets. Return the reported amount in USD millions, without currency symbols or commas. Do not use the September 30, 2023 column. If unavailable, return null."
+      },
+      "jun2024_current_term_debt": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract 'Term debt (current liabilities)' as of June 29, 2024 from the Condensed Consolidated Balance Sheets. Return the reported amount in USD millions, without currency symbols or commas. Do not use non-current term debt. Do not use the September 30, 2023 column. If unavailable, return null."
+      },
+      "jun2024_non_current_term_debt": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract 'Term debt (non-current liabilities)' as of June 29, 2024 from the Condensed Consolidated Balance Sheets. Return the reported amount in USD millions, without currency symbols or commas. Do not use current term debt. Do not use the September 30, 2023 column. If unavailable, return null."
+      },
+      "jun2024_total_liabilities": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract 'Total liabilities' as of June 29, 2024 from the Condensed Consolidated Balance Sheets. Return the reported amount in USD millions, without currency symbols or commas. Do not use the September 30, 2023 column. If unavailable, return null."
+      },
+      "jun2024_shareholders_equity": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract 'Total shareholders' equity' as of June 29, 2024 from the Condensed Consolidated Balance Sheets. Return the reported amount in USD millions, without currency symbols or commas. Do not use the September 30, 2023 column. If unavailable, return null."
+      },
+      "jun2024_restricted_marketable_securities": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract the amount of marketable securities restricted from general use related to the State Aid Decision and other agreements, as of June 29, 2024, from the Financial Instruments note. USD millions; convert billions to millions. If unavailable, return null."
+      },
+      "sep2023_cash_cash_equivalents": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract 'Cash and cash equivalents' as of September 30, 2023 from the Condensed Consolidated Balance Sheets. Return the reported amount in USD millions, without currency symbols or commas. Do not include marketable securities or restricted cash. Do not use the June 29, 2024 column. If unavailable, return null."
+      },
+      "sep2023_current_marketable_securities": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract 'Marketable securities (current assets)' as of September 30, 2023 from the Condensed Consolidated Balance Sheets. Return the reported amount in USD millions, without currency symbols or commas. Do not use non-current marketable securities. Do not use the June 29, 2024 column. If unavailable, return null."
+      },
+      "sep2023_non_current_marketable_securities": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract 'Marketable securities (non-current assets)' as of September 30, 2023 from the Condensed Consolidated Balance Sheets. Return the reported amount in USD millions, without currency symbols or commas. Do not use current marketable securities. Do not use the June 29, 2024 column. If unavailable, return null."
+      },
+      "sep2023_inventories": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract 'Inventories' as of September 30, 2023 from the Condensed Consolidated Balance Sheets. Return the reported amount in USD millions, without currency symbols or commas. Do not use the June 29, 2024 column. If unavailable, return null."
+      },
+      "sep2023_total_assets": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract 'Total assets' as of September 30, 2023 from the Condensed Consolidated Balance Sheets. Return the reported amount in USD millions, without currency symbols or commas. Do not use the June 29, 2024 column. If unavailable, return null."
+      },
+      "sep2023_deferred_revenue_current": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract 'Deferred revenue (current liabilities)' as of September 30, 2023 from the Condensed Consolidated Balance Sheets. Return the reported amount in USD millions, without currency symbols or commas. Do not use the June 29, 2024 column. If unavailable, return null."
+      },
+      "sep2023_commercial_paper": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract 'Commercial paper' as of September 30, 2023 from the Condensed Consolidated Balance Sheets. Return the reported amount in USD millions, without currency symbols or commas. Do not use the June 29, 2024 column. If unavailable, return null."
+      },
+      "sep2023_current_term_debt": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract 'Term debt (current liabilities)' as of September 30, 2023 from the Condensed Consolidated Balance Sheets. Return the reported amount in USD millions, without currency symbols or commas. Do not use non-current term debt. Do not use the June 29, 2024 column. If unavailable, return null."
+      },
+      "sep2023_non_current_term_debt": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract 'Term debt (non-current liabilities)' as of September 30, 2023 from the Condensed Consolidated Balance Sheets. Return the reported amount in USD millions, without currency symbols or commas. Do not use current term debt. Do not use the June 29, 2024 column. If unavailable, return null."
+      },
+      "sep2023_total_liabilities": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract 'Total liabilities' as of September 30, 2023 from the Condensed Consolidated Balance Sheets. Return the reported amount in USD millions, without currency symbols or commas. Do not use the June 29, 2024 column. If unavailable, return null."
+      },
+      "sep2023_shareholders_equity": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract 'Total shareholders' equity' as of September 30, 2023 from the Condensed Consolidated Balance Sheets. Return the reported amount in USD millions, without currency symbols or commas. Do not use the June 29, 2024 column. If unavailable, return null."
+      },
+      "sep2023_restricted_marketable_securities": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract the amount of marketable securities restricted from general use related to the State Aid Decision and other agreements, as of September 30, 2023, from the Financial Instruments note. USD millions; convert billions to millions. If unavailable, return null."
+      },
+      "q3_fy2024_share_based_compensation": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract share-based compensation expense for the three months ended June 29, 2024 from the share-based compensation table in Note 9, Share-Based Compensation. Return the reported amount in USD millions, without currency symbols or commas. Do not use the income tax benefit or the nine-month figure. Do not use the 'Three Months Ended July 1, 2023', 'Nine Months Ended June 29, 2024' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "q3_fy2023_share_based_compensation": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract share-based compensation expense for the three months ended July 1, 2023 from the share-based compensation table in Note 9, Share-Based Compensation. Return the reported amount in USD millions, without currency symbols or commas. Do not use the income tax benefit or the nine-month figure. Do not use the 'Three Months Ended June 29, 2024', 'Nine Months Ended June 29, 2024' or 'Nine Months Ended July 1, 2023' columns. If unavailable, return null."
+      },
+      "jun2024_total_deferred_revenue": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract total deferred revenue as of June 29, 2024 as stated in Note 2, Revenue (current and non-current combined). USD millions; convert billions to millions. Do not use the current deferred revenue line on the balance sheet. If unavailable, return null."
+      },
+      "sep2023_total_deferred_revenue": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract total deferred revenue as of September 30, 2023 as stated in Note 2, Revenue (current and non-current combined). USD millions; convert billions to millions. Do not use the current deferred revenue line on the balance sheet. If unavailable, return null."
+      },
+      "q3_fy2024_share_repurchases_md_and_a": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract the dollar amount of common stock Apple repurchased during the third quarter of 2024 as stated in Liquidity and Capital Resources / Capital Return Program. USD millions; convert billions to millions. Do not use the nine-month cash flow figure. If unavailable, return null."
+      },
+      "q3_fy2024_shares_repurchased_thousands": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract the total number of shares purchased in the third quarter of 2024 from the Issuer Purchases of Equity Securities table in Part II, Item 2 (Total row). Return thousands of shares without commas. If unavailable, return null."
+      },
+      "q3_fy2024_dividend_per_share": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract the quarterly dividend per share declared, as stated in Capital Return Program or the Statements of Shareholders' Equity for the three months ended June 29, 2024. USD per share. If unavailable, return null."
+      },
+      "q3_fy2024_dividends_declared": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract dividends and dividend equivalents declared for the three months ended June 29, 2024 from the Condensed Consolidated Statements of Shareholders' Equity. Return the reported amount in USD millions, without currency symbols or commas. If unavailable, return null."
+      },
+      "jun2024_remaining_repurchase_authorization": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract the approximate dollar value of shares that may yet be purchased under the plans or programs as of the end of the quarter, from the Issuer Purchases of Equity Securities table (Part II, Item 2). Return the reported amount in USD millions, without currency symbols or commas. If unavailable, return null."
+      },
+      "may2024_new_repurchase_program": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract the size of the new share repurchase program authorized by the Board on May 2, 2024, from the footnote to the Issuer Purchases of Equity Securities table. USD millions; convert billions to millions. If unavailable, return null."
+      },
+      "jun2024_manufacturing_purchase_obligations": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract total manufacturing purchase obligations as of June 29, 2024 from Liquidity and Capital Resources. USD millions; convert billions to millions. If unavailable, return null."
+      },
+      "jun2024_manufacturing_purchase_obligations_12m": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Extract the portion of manufacturing purchase obligations payable within 12 months, as of June 29, 2024, from Liquidity and Capital Resources. USD millions; convert billions to millions. If unavailable, return null."
+      },
+      "gross_margin_outlook": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "description": "Quote management's forward-looking statement about future gross margins from the Gross Margin section of MD&A (for example expected volatility or downward pressure). Quote exactly; do not summarize risk factors. Return null if not disclosed."
+      },
+      "dividend_policy": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "description": "Quote the statement on Apple's intention to increase its dividend, from Capital Return Program in MD&A. Quote exactly. Return null if not disclosed."
+      },
+      "fx_commentary": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "description": "Transcribe the statements in the Segment Operating Performance section of MD&A about how foreign currency movements affected segment net sales in the third quarter and first nine months of 2024. No outside information. Return null if not disclosed."
+      },
+      "fiscal_calendar_note": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "description": "Transcribe the statement on the number of weeks in fiscal 2024 and fiscal 2023 and which quarter had the extra week, from the Fiscal Period section of MD&A or Note 1. Return null if not disclosed."
+      },
+      "quantitative_guidance": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "description": "Extract any explicit quantitative revenue, margin, operating expense or capital expenditure guidance for a future quarter or fiscal year stated in this Form 10-Q. Do not use historical results, purchase obligations or risk factors. Return null if the filing gives no quantitative guidance."
+      },
+      "legal_and_regulatory_developments": {
+        "type": [
+          "array",
+          "null"
+        ],
+        "items": {
+          "type": "object",
+          "properties": {
+            "topic": {
+              "type": "string"
+            },
+            "details": {
+              "type": "string"
+            },
+            "value": {
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "unit": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "period": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "additionalProperties": false
+        },
+        "description": "Extract each legal or regulatory matter described in Part II, Item 1 Legal Proceedings and the European Commission State Aid Decision in Note 6, Income Taxes (for example the Digital Markets Act investigations, the Department of Justice lawsuit, Epic Games, the European Commission State Aid Decision). Each item: topic, factual details with dates, any disclosed amount, period. No outside information. Return null if none."
+      },
+      "product_and_business_announcements": {
+        "type": [
+          "array",
+          "null"
+        ],
+        "items": {
+          "type": "object",
+          "properties": {
+            "topic": {
+              "type": "string"
+            },
+            "details": {
+              "type": "string"
+            },
+            "value": {
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "unit": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "period": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "additionalProperties": false
+        },
+        "description": "Extract the products, software and business announcements listed in the Business Seasonality and Product Introductions or Quarterly Highlights section of MD&A. Each item: topic (product name), details, period. Return null if none."
+      }
+    },
+    "required": [
+      "q3_fy2024_total_net_sales",
+      "q3_fy2024_products_net_sales",
+      "q3_fy2024_services_net_sales",
+      "q3_fy2024_gross_margin",
+      "q3_fy2024_research_and_development",
+      "q3_fy2024_selling_general_administrative",
+      "q3_fy2024_operating_income",
+      "q3_fy2024_provision_for_income_taxes",
+      "q3_fy2024_net_income",
+      "q3_fy2024_basic_eps",
+      "q3_fy2024_diluted_eps",
+      "q3_fy2024_diluted_shares",
+      "q3_fy2023_total_net_sales",
+      "q3_fy2023_products_net_sales",
+      "q3_fy2023_services_net_sales",
+      "q3_fy2023_gross_margin",
+      "q3_fy2023_research_and_development",
+      "q3_fy2023_selling_general_administrative",
+      "q3_fy2023_operating_income",
+      "q3_fy2023_provision_for_income_taxes",
+      "q3_fy2023_net_income",
+      "q3_fy2023_basic_eps",
+      "q3_fy2023_diluted_eps",
+      "q3_fy2023_diluted_shares",
+      "ytd_fy2024_total_net_sales",
+      "ytd_fy2024_products_net_sales",
+      "ytd_fy2024_services_net_sales",
+      "ytd_fy2024_gross_margin",
+      "ytd_fy2024_research_and_development",
+      "ytd_fy2024_selling_general_administrative",
+      "ytd_fy2024_operating_income",
+      "ytd_fy2024_provision_for_income_taxes",
+      "ytd_fy2024_net_income",
+      "ytd_fy2024_basic_eps",
+      "ytd_fy2024_diluted_eps",
+      "ytd_fy2024_diluted_shares",
+      "ytd_fy2023_total_net_sales",
+      "ytd_fy2023_products_net_sales",
+      "ytd_fy2023_services_net_sales",
+      "ytd_fy2023_gross_margin",
+      "ytd_fy2023_research_and_development",
+      "ytd_fy2023_selling_general_administrative",
+      "ytd_fy2023_operating_income",
+      "ytd_fy2023_provision_for_income_taxes",
+      "ytd_fy2023_net_income",
+      "ytd_fy2023_basic_eps",
+      "ytd_fy2023_diluted_eps",
+      "ytd_fy2023_diluted_shares",
+      "q3_fy2024_products_gross_margin",
+      "q3_fy2024_services_gross_margin",
+      "q3_fy2024_effective_tax_rate_pct",
+      "q3_fy2023_products_gross_margin",
+      "q3_fy2023_services_gross_margin",
+      "q3_fy2023_effective_tax_rate_pct",
+      "ytd_fy2024_products_gross_margin",
+      "ytd_fy2024_services_gross_margin",
+      "ytd_fy2024_effective_tax_rate_pct",
+      "ytd_fy2023_products_gross_margin",
+      "ytd_fy2023_services_gross_margin",
+      "ytd_fy2023_effective_tax_rate_pct",
+      "q3_fy2024_iphone_net_sales",
+      "q3_fy2024_mac_net_sales",
+      "q3_fy2024_ipad_net_sales",
+      "q3_fy2024_wearables_home_accessories_net_sales",
+      "q3_fy2024_services_category_net_sales",
+      "q3_fy2023_iphone_net_sales",
+      "q3_fy2023_mac_net_sales",
+      "q3_fy2023_ipad_net_sales",
+      "q3_fy2023_wearables_home_accessories_net_sales",
+      "q3_fy2023_services_category_net_sales",
+      "ytd_fy2024_iphone_net_sales",
+      "ytd_fy2024_mac_net_sales",
+      "ytd_fy2024_ipad_net_sales",
+      "ytd_fy2024_wearables_home_accessories_net_sales",
+      "ytd_fy2024_services_category_net_sales",
+      "ytd_fy2023_iphone_net_sales",
+      "ytd_fy2023_mac_net_sales",
+      "ytd_fy2023_ipad_net_sales",
+      "ytd_fy2023_wearables_home_accessories_net_sales",
+      "ytd_fy2023_services_category_net_sales",
+      "q3_fy2024_americas_net_sales",
+      "q3_fy2024_americas_operating_income",
+      "q3_fy2024_europe_net_sales",
+      "q3_fy2024_europe_operating_income",
+      "q3_fy2024_greater_china_net_sales",
+      "q3_fy2024_greater_china_operating_income",
+      "q3_fy2024_japan_net_sales",
+      "q3_fy2024_japan_operating_income",
+      "q3_fy2024_rest_of_asia_pacific_net_sales",
+      "q3_fy2024_rest_of_asia_pacific_operating_income",
+      "q3_fy2024_segment_operating_income_total",
+      "q3_fy2024_other_corporate_expenses",
+      "q3_fy2023_americas_net_sales",
+      "q3_fy2023_americas_operating_income",
+      "q3_fy2023_europe_net_sales",
+      "q3_fy2023_europe_operating_income",
+      "q3_fy2023_greater_china_net_sales",
+      "q3_fy2023_greater_china_operating_income",
+      "q3_fy2023_japan_net_sales",
+      "q3_fy2023_japan_operating_income",
+      "q3_fy2023_rest_of_asia_pacific_net_sales",
+      "q3_fy2023_rest_of_asia_pacific_operating_income",
+      "q3_fy2023_segment_operating_income_total",
+      "q3_fy2023_other_corporate_expenses",
+      "ytd_fy2024_americas_net_sales",
+      "ytd_fy2024_americas_operating_income",
+      "ytd_fy2024_europe_net_sales",
+      "ytd_fy2024_europe_operating_income",
+      "ytd_fy2024_greater_china_net_sales",
+      "ytd_fy2024_greater_china_operating_income",
+      "ytd_fy2024_japan_net_sales",
+      "ytd_fy2024_japan_operating_income",
+      "ytd_fy2024_rest_of_asia_pacific_net_sales",
+      "ytd_fy2024_rest_of_asia_pacific_operating_income",
+      "ytd_fy2024_segment_operating_income_total",
+      "ytd_fy2024_other_corporate_expenses",
+      "ytd_fy2023_americas_net_sales",
+      "ytd_fy2023_americas_operating_income",
+      "ytd_fy2023_europe_net_sales",
+      "ytd_fy2023_europe_operating_income",
+      "ytd_fy2023_greater_china_net_sales",
+      "ytd_fy2023_greater_china_operating_income",
+      "ytd_fy2023_japan_net_sales",
+      "ytd_fy2023_japan_operating_income",
+      "ytd_fy2023_rest_of_asia_pacific_net_sales",
+      "ytd_fy2023_rest_of_asia_pacific_operating_income",
+      "ytd_fy2023_segment_operating_income_total",
+      "ytd_fy2023_other_corporate_expenses",
+      "ytd_fy2024_operating_cash_flow",
+      "ytd_fy2024_share_based_compensation",
+      "ytd_fy2024_depreciation_amortization",
+      "ytd_fy2024_purchases_ppe",
+      "ytd_fy2024_purchases_marketable_securities",
+      "ytd_fy2024_maturities_marketable_securities",
+      "ytd_fy2024_sales_marketable_securities",
+      "ytd_fy2024_investing_cash_flow",
+      "ytd_fy2024_net_share_settlement_taxes",
+      "ytd_fy2024_dividends_paid",
+      "ytd_fy2024_share_repurchases",
+      "ytd_fy2024_term_debt_proceeds",
+      "ytd_fy2024_term_debt_repayments",
+      "ytd_fy2024_commercial_paper_net",
+      "ytd_fy2024_financing_cash_flow",
+      "ytd_fy2024_beginning_cash",
+      "ytd_fy2024_ending_cash",
+      "ytd_fy2024_cash_paid_income_taxes",
+      "ytd_fy2023_operating_cash_flow",
+      "ytd_fy2023_share_based_compensation",
+      "ytd_fy2023_depreciation_amortization",
+      "ytd_fy2023_purchases_ppe",
+      "ytd_fy2023_purchases_marketable_securities",
+      "ytd_fy2023_maturities_marketable_securities",
+      "ytd_fy2023_sales_marketable_securities",
+      "ytd_fy2023_investing_cash_flow",
+      "ytd_fy2023_net_share_settlement_taxes",
+      "ytd_fy2023_dividends_paid",
+      "ytd_fy2023_share_repurchases",
+      "ytd_fy2023_term_debt_proceeds",
+      "ytd_fy2023_term_debt_repayments",
+      "ytd_fy2023_commercial_paper_net",
+      "ytd_fy2023_financing_cash_flow",
+      "ytd_fy2023_beginning_cash",
+      "ytd_fy2023_ending_cash",
+      "ytd_fy2023_cash_paid_income_taxes",
+      "jun2024_cash_cash_equivalents",
+      "jun2024_current_marketable_securities",
+      "jun2024_non_current_marketable_securities",
+      "jun2024_inventories",
+      "jun2024_total_assets",
+      "jun2024_deferred_revenue_current",
+      "jun2024_commercial_paper",
+      "jun2024_current_term_debt",
+      "jun2024_non_current_term_debt",
+      "jun2024_total_liabilities",
+      "jun2024_shareholders_equity",
+      "jun2024_restricted_marketable_securities",
+      "sep2023_cash_cash_equivalents",
+      "sep2023_current_marketable_securities",
+      "sep2023_non_current_marketable_securities",
+      "sep2023_inventories",
+      "sep2023_total_assets",
+      "sep2023_deferred_revenue_current",
+      "sep2023_commercial_paper",
+      "sep2023_current_term_debt",
+      "sep2023_non_current_term_debt",
+      "sep2023_total_liabilities",
+      "sep2023_shareholders_equity",
+      "sep2023_restricted_marketable_securities",
+      "q3_fy2024_share_based_compensation",
+      "q3_fy2023_share_based_compensation",
+      "jun2024_total_deferred_revenue",
+      "sep2023_total_deferred_revenue",
+      "q3_fy2024_share_repurchases_md_and_a",
+      "q3_fy2024_shares_repurchased_thousands",
+      "q3_fy2024_dividend_per_share",
+      "q3_fy2024_dividends_declared",
+      "jun2024_remaining_repurchase_authorization",
+      "may2024_new_repurchase_program",
+      "jun2024_manufacturing_purchase_obligations",
+      "jun2024_manufacturing_purchase_obligations_12m",
+      "gross_margin_outlook",
+      "dividend_policy",
+      "fx_commentary",
+      "fiscal_calendar_note",
+      "quantitative_guidance",
+      "legal_and_regulatory_developments",
+      "product_and_business_announcements"
+    ]
+  }
+}
