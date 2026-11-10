@@ -42,7 +42,12 @@ reducto_financial_extraction.ipynb    Walkthrough notebook (run in Google Colab)
 src/build_workbook.py                 Payload loading, validation and workbook builder
 schema/amazon_q4_2024_schema.json     Reducto extraction schema (92 fields)
 dev/development_notebook.ipynb        Development log: schema iterations and experiments
+output/Amazon_Q4_2024_LP_Analysis.xlsx  Sample output from the final run (job df4c47ae)
 ```
+
+## Sample output
+
+`output/Amazon_Q4_2024_LP_Analysis.xlsx` is the workbook from the final validated run (12 of 12 checks passed). Open it to see the result without running anything.
 
 ## Run it
 
