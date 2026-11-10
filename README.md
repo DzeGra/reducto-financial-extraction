@@ -12,7 +12,7 @@ An LP tracks dozens of portfolio companies and public comparables. Each quarter,
 
 ```
 Earnings PDF ──► Reducto upload ──► Reducto Extract ──► Validation ──► LP workbook (.xlsx)
-                                    (JSON schema,       (11 reconciliation
+                                    (JSON schema,       (12 reconciliation
                                      citations on)       checks)
 ```
 
@@ -32,7 +32,7 @@ Earnings PDF ──► Reducto upload ──► Reducto Extract ──► Valida
 | Notes | Source, method, units, calculated fields, omitted items, growth-only disclosures |
 | KPIs | Release highlights plus every supplemental metric by quarter; stock-based compensation chart |
 | Disclosures | Partnerships, contract wins and business developments |
-| Validation | 11 reconciliation checks with PASS/FAIL |
+| Validation | 12 reconciliation checks with PASS/FAIL |
 | Extraction Audit | Every field with readable name, value, page, confidence and cited source text |
 
 ## Repository

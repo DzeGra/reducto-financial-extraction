@@ -433,13 +433,14 @@ def guidance_tab(wb, v, raw):
     s.ws.freeze_panes = "B4"
 
 
+BY_TYPE = {"Online stores", "Physical stores", "Third-party seller services", "Advertising services",
+           "Subscription services", "AWS", "Other"}
+
 SECTION_RULES = [
-    ("North America", lambda m: m.startswith("North America Segment")),
-    ("International", lambda m: m.startswith("International Segment")),
-    ("AWS segment", lambda m: m.startswith("AWS Segment")),
-    ("Net sales by type", lambda m: m.split(" --")[0].split(" (")[0] in
-     {"Online stores", "Physical stores", "Third-party seller services", "Advertising services",
-      "Subscription services", "AWS", "Other"}),
+    ("Net sales by type", lambda m: m.split(" --")[0].split(" (")[0] in BY_TYPE),
+    ("North America", lambda m: m.startswith("North America")),
+    ("International", lambda m: m.startswith("International")),
+    ("AWS segment", lambda m: m.startswith("AWS")),
     ("Operating expenses", lambda m: m.startswith(("Cost of sales", "Fulfillment", "Technology and infrastructure",
                                                    "Sales and marketing", "General and administrative",
                                                    "Total stock-based compensation"))),
@@ -449,7 +450,6 @@ SECTION_RULES = [
                                                       "Stock-based awards"))),
     ("Results of operations", lambda m: True),
 ]
-
 
 def kpis_tab(wb, kpis):
     s = Sheet(wb, "KPIs", "Amazon.com, Inc. | Key Business Metrics",
@@ -517,6 +517,7 @@ def disclosures_tab(wb, raw):
 def validation_checks(v, kpis):
     """Reconcile extracted figures against each other. Returns (check, calculated, reported)."""
     def seg_sum(period, metric):
+        """Sum the three segments for one period and metric."""
         return sum(v[f"{period}_{s}_{metric}"] for s in ("north_america", "international", "aws"))
 
     q4 = lambda metric: kpi_series(kpis, metric)[-1]
@@ -532,6 +533,8 @@ def validation_checks(v, kpis):
         ("Q4 2024 net sales: supplemental table (p.10) = income statement (p.6)", q4("Worldwide (WW) net sales"), v["q4_2024_total_net_sales"]),
         ("FY2024 net income: TTM table (p.10) = income statement (p.6)", q4("Net income -- TTM"), v["fy2024_net_income"]),
         ("FY2024 operating cash flow: TTM table (p.10) = cash flow statement (p.5)", q4("Operating cash flow -- trailing"), v["fy2024_operating_cash_flow"]),
+        ("Supplemental tables: all 6 quarters captured (operating cash flow TTM)",
+         sum(x is not None for x in kpi_series(kpis, "Operating cash flow -- trailing")), len(QUARTERS)),
     ]
 
 
