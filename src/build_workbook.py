@@ -441,7 +441,7 @@ SECTION_RULES = [
     ("North America", lambda m: m.startswith("North America")),
     ("International", lambda m: m.startswith("International")),
     ("AWS segment", lambda m: m.startswith("AWS")),
-    ("Operating expenses", lambda m: m.startswith(("Cost of sales", "Fulfillment", "Technology and infrastructure",
+    ("Stock-based compensation by expense line", lambda m: m.startswith(("Cost of sales", "Fulfillment", "Technology and infrastructure",
                                                    "Sales and marketing", "General and administrative",
                                                    "Total stock-based compensation"))),
     ("Operational KPIs", lambda m: m.startswith(("WW shipping", "WW paid units", "WW seller unit", "Employees"))),
@@ -456,12 +456,13 @@ def kpis_tab(wb, kpis):
               "Source: Q4 2024 Earnings Release highlights (p.2) and Supplemental Financial Information (pp.10–13)",
               [22, 60, 14] + [12] * 6 + [8])
     highlights = [r for r in kpis if r["page"] == 2]  # text highlights on p.2; tables start on p.10
-    s.section("Highlights since the last earnings announcement")
-    s.header(["Period", "Metric", "Value", "Unit"])
-    for r in highlights:
-        s.add([r["period"], r["metric"], r["value"], r["unit"]], [None, None, "#,##0.0##"])
+    if highlights:
+        s.section("Highlights since the last earnings announcement")
+        s.header(["Period", "Metric", "Value", "Unit"])
+        for r in highlights:
+            s.add([r["period"], r["metric"], r["value"], r["unit"]], [None, None, "#,##0.0##"])
+        s.gap()
 
-    s.gap()
     s.section("Supplemental metrics by quarter")
     head = s.header(["Section", "Metric", "Unit", *QUARTERS, "Page"])
     table, order = {}, []
