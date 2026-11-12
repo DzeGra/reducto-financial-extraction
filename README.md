@@ -18,10 +18,11 @@ Earnings PDF ──► Reducto upload ──► Reducto Extract ──► Valida
                                      citations on)       checks)
 ```
 
-1. **Extract:** one JSON schema defines every figure the LP asked for, where it appears in the document, its unit and its sign convention.
-2. **Trace:** citations return the page, bounding box and confidence score for every value.
-3. **Validate:** extracted numbers are reconciled against each other (segments sum to totals, FCF = operating cash flow − net capex, supplemental tables agree with the financial statements).
-4. **Deliver:** an Excel workbook in the LP's requested format, with formulas, charts and a full audit trail.
+1. **Studio first:** parsed and extracted in Reducto Studio, took the generated code from Studio’s Code tab, then iterated on the schema with AI (50, then 80, then 90 fields, 92 in the final file).
+2. **Extract:** one JSON schema defines every figure the LP asked for, where it appears in the document, its unit and its sign convention.
+3. **Trace:** citations return the page, bounding box and confidence score for every value.
+4. **Validate:** extracted numbers are reconciled against each other (segments sum to totals, FCF = operating cash flow − net capex, supplemental tables agree with the financial statements).
+5. **Deliver:** an Excel workbook in the LP's requested format, with formulas, charts and a full audit trail.
 
 ## Output workbook
 
@@ -88,7 +89,7 @@ output/Apple_Q3_FY2024_LP_Analysis.xlsx     Apple sample output (job 43142753)
 1. Open `reducto_financial_extraction.ipynb` (Amazon) or `apple_q3_fy2024_10q.ipynb` (Apple) in Google Colab.
 2. Add your Reducto API key to Colab Secrets as `REDUCTO_API_KEY`.
 3. Run all cells and upload the PDF when prompted (`AMZN-Q4-2024-Earnings-Release.pdf` or `_10-Q-Q3-2024-As-Filed.pdf`).
-4. The workbook downloads at the end. To reuse a completed extraction and save credits, set `REUSE_JOB_ID`.
+4. The workbook downloads at the end. To reuse a completed extraction and save credits, set REUSE_JOB_ID. Both notebooks save jobs with persist_results, since Reducto deletes job results after 12 hours by default.
 
 ## Design decisions
 
@@ -103,3 +104,4 @@ output/Apple_Q3_FY2024_LP_Analysis.xlsx     Apple sample output (job 43142753)
 
 - Batch processing with async jobs and webhooks for a full portfolio each quarter
 - Review queue that routes low-confidence fields to an analyst
+- Completeness checks for array fields: KPI record counts varied across reruns (494, then 486) while all 12 checks passed
